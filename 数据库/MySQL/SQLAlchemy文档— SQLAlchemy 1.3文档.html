@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://docs.sqlalchemy.org/en/13/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>SQLAlchemy文档— SQLAlchemy 1.3文档</title>
+
+    
+
+    
+
+    <link href="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/css" rel="stylesheet" type="text/css">
+
+    
+        <!-- begin iterate through SQLA css_files -->
+            <link rel="stylesheet" href="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/pygments.css" type="text/css">
+        <!-- end iterate through SQLA css_files -->
+
+        <!-- begin iterate through sphinx environment local css_files -->
+            <link rel="stylesheet" href="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/docs.css" type="text/css">
+            <link rel="stylesheet" href="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/changelog.css" type="text/css">
+            <link rel="stylesheet" href="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/sphinx_paramlinks.css" type="text/css">
+        <!-- end iterate through sphinx environment local css_files -->
+
+        <link rel="stylesheet" type="text/css" media="all" href="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/site.css">
+        <link rel="stylesheet" type="text/css" media="all" href="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/carbonads.css">
+        <link rel="stylesheet" type="text/css" media="print" href="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/print.css">
+
+        <!-- begin iterate through sphinx environment remote css_files -->
+        <!-- end iterate through sphinx environment remote css_files -->
+    
+
+    
+
+    
+
+    
+
+
+    
+        <link rel="canonical" href="http://docs.sqlalchemy.org/en/latest/">
+
+    <script type="text/javascript" async="" src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/ga.js.下载"></script><script type="text/javascript">
+        var doc_version = "latest";
+        var doc_slug = "sqlalchemy";
+        var static_root = "_static"
+
+        // copied from:
+        // https://github.com/rtfd/readthedocs.org/commit/edbbb4c753454cf20c128d4eb2fef60d740debaa#diff-2f70e8d9361202bfe3f378d2ff2c510bR8
+        var READTHEDOCS_DATA = {
+            project: "sqlalchemy",
+            version: "latest",
+            page: "index",
+            theme: ""
+          };
+
+
+    </script>
+    <!-- end RTD <head> via SQLAlchemy adapter -->
+
+    
+
+    <!-- begin layout.mako headers -->
+
+    <link rel="index" title="指数" href="https://docs.sqlalchemy.org/en/13/genindex.html">
+    <link rel="search" title="搜索" href="https://docs.sqlalchemy.org/en/13/search.html">
+        <link rel="copyright" title="版权" href="https://docs.sqlalchemy.org/en/13/copyright.html">
+    <link rel="top" title="SQLAlchemy 1.3文档" href="https://docs.sqlalchemy.org/en/13/#">
+    <!-- end layout.mako headers -->
+
+
+
+
+    
+
+    <!-- sqlalchemy.org docs base head -->
+    
+<link rel="shortcut icon" href="https://www.sqlalchemy.org/favicon.ico" type="image/x-icon">
+<link href="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/css(1)" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+var site_base='//www.sqlalchemy.org';
+var docs_base='//docs.sqlalchemy.org';
+</script>
+
+<script>
+  var SeedAndDewConfig = {};
+  (function() {
+    SeedAndDewConfig['adClass'] = "snd-ad";
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    SeedAndDewConfig['projectId'] = '433644b6-8850-4de8-a4e0-3aab1f25c57a';
+    SeedAndDewConfig['loadStartTime'] = performance.now();
+    SeedAndDewConfig['apiVersion'] = '2018-05-28'
+    SeedAndDewConfig['sessionId'] = Math.random().toString(36).substring(2, 15);
+    var snd = document.createElement('script');
+    snd.type = 'text/javascript';
+    snd.async = true;
+    snd.src = 'https://www.seedanddew.com/static/embed.min.js';
+    (document.getElementsByTagName('head')[0] ||
+    document.getElementsByTagName('body')[0]).appendChild(snd);
+  })();
+</script><script type="text/javascript" async="" src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/embed.min.js.下载"></script>
+
+    <!-- end sqlalchemy.org docs base head -->
+
+<div id="_bsa_srv-CKYD62QL_0"></div><script type="text/javascript" async="" src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/seedanddew_v1.min.js.下载"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/translateelement.css"></head>
+
+<body>
+
+<div id="wrap">
+
+
+
+
+<div id="header">
+    <div id="logo"><a href="https://www.sqlalchemy.org/"><img src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/sqla_logo.png" width="240" alt="SQL炼金术"></a></div>
+    <div id="description"><img src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/dbtoolkit6.gif" width="180" height="12" alt="适用于Python的数据库工具包"></div>
+</div>
+
+<div id="nav">
+
+    <ul>
+        <li><a href="https://www.sqlalchemy.org/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">家</font></font></a></li>
+        <li><a href="https://www.sqlalchemy.org/features.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特征</font></font></a>
+            <ul>
+                <li><a href="https://www.sqlalchemy.org/features.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">功能概述</font></font></a></li>
+                <li><a href="https://www.sqlalchemy.org/quotes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">感言</font></font></a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.sqlalchemy.org/blog/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">博客</font></font></a></li>
+        <li class="active"><a href="https://www.sqlalchemy.org/library.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图书馆</font></font></a>
+            <ul>
+                <li><a href="https://www.sqlalchemy.org/library.html#reference"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参考</font></font></a>
+                    <ul class="version-listing"><li><a href="https://docs.sqlalchemy.org/en/14/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.4版（开发）</font></font></a></li><li><a href="https://docs.sqlalchemy.org/en/13/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本1.3</font></font></a></li><li><a href="https://docs.sqlalchemy.org/en/12/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本1.2</font></font></a></li><li><a href="https://docs.sqlalchemy.org/en/11/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本1.1</font></font></a></li></ul>
+                </li>
+                <li><a href="https://www.sqlalchemy.org/library.html#architecture"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建筑</font></font></a></li>
+                <li><a href="https://www.sqlalchemy.org/library.html#citations"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">引用SQLAlchemy</font></font></a></li>
+                <li><a href="https://www.sqlalchemy.org/library.html#blog"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">博客文章</font></font></a></li>
+                <li><a href="https://www.sqlalchemy.org/library.html#talks"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会谈</font></font></a></li>
+                <li><a href="https://www.sqlalchemy.org/library.html#tutorials"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">讲解</font></font></a></li>
+                <li><a href="https://www.sqlalchemy.org/library.html#recipes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">菜谱</font></font></a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.sqlalchemy.org/support.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区</font></font></a>
+            <ul>
+                <li><a href="https://www.sqlalchemy.org/support.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">得到支持</font></font></a></li>
+                <li><a href="https://www.sqlalchemy.org/participate.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参加</font></font></a></li>
+                <li><a href="https://www.sqlalchemy.org/develop.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发</font></font></a></li>
+                <li><a href="https://www.sqlalchemy.org/codeofconduct.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">行为守则</font></font></a></li>
+                <li><a href="https://github.com/sqlalchemy/sqlalchemy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Github</font></font></a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.sqlalchemy.org/download.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></a>
+            
+
+
+
+
+<ul>
+
+    <li><a href="https://www.sqlalchemy.org/download.html#current"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当前版本系列（1.3）</font></font></a></li>
+
+    <li><a href="https://www.sqlalchemy.org/download.html#maintenance"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维护版本（1.2）</font></font></a></li>
+
+    <li><a href="https://www.sqlalchemy.org/download.html#development"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发访问</font></font></a></li>
+    <li><a href="https://www.sqlalchemy.org/download.html#license"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></a></li>
+    <li><a href="https://www.sqlalchemy.org/download.html#versions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本编号</font></font></a></li>
+    <li><a href="https://www.sqlalchemy.org/download.html#relstatus"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发行状态</font></font></a></li>
+</ul>
+
+        </li>
+    </ul>
+
+</div>
+
+
+
+
+<div id="main-body" class="docs">
+
+<div id="docs">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="docs-container">
+
+
+
+
+
+<div id="docs-top-navigation-container" class="body-background">
+<div id="docs-header">
+    <div id="docs-version-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        稿：</font></font><span class="version-num"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1.3.15 </font></font></span>
+
+            <span id="sidebar-current"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当前版本</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+
+        | </font><font style="vertical-align: inherit;">发行日期：2020年3月11日
+
+    </font></font></div>
+
+    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQLAlchemy 1.3文档</font></font></h1>
+
+</div>
+</div>
+
+<div id="docs-body-container">
+
+    <div id="fixed-sidebar" class="">
+
+        <div id="index-nav">
+            <form class="search" action="https://docs.sqlalchemy.org/en/13/search.html" method="get">
+              <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                 搜索词：
+              </font></font><input type="text" placeholder="搜索..." name="q" size="12">
+              </label>
+              <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input type="submit" value="搜索"></font></font>
+              <input type="hidden" name="check_keywords" value="yes">
+              <input type="hidden" name="area" value="default">
+            </form>
+
+            <p>
+            <a href="https://docs.sqlalchemy.org/en/13/contents.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+            </font></font><a href="https://docs.sqlalchemy.org/en/13/genindex.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指数</font></font></a>
+            </p>
+
+        </div>
+
+
+    </div>
+
+    
+
+    <div id="docs-body" class="">
+        
+<div class="section" id="sqlalchemy-documentation">
+<span id="index-toplevel"></span><h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQLAlchemy文档</font></font><a class="headerlink" href="https://docs.sqlalchemy.org/en/13/#sqlalchemy-documentation" title="固定到该标题"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h1>
+<div class="section" id="getting-started">
+<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font><a class="headerlink" href="https://docs.sqlalchemy.org/en/13/#getting-started" title="固定到该标题"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高层次的观点和建立。</font></font></p>
+<p><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/intro.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/intro.html#installation"><span class="std std-ref"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装指南</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/faq/index.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常见问题</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/changelog/migration_13.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从1.2迁移</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/glossary.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">词汇表</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/errors.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">错误信息</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/changelog/index.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变更日志目录</font></font></span></a></p>
+</div>
+<div class="section" id="sqlalchemy-orm">
+<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQLAlchemy </font></font><a class="headerlink" href="https://docs.sqlalchemy.org/en/13/#sqlalchemy-orm" title="固定到该标题"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ORM¶</font></font></a></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此，介绍并详细描述了对象关系映射器。</font><font style="vertical-align: inherit;">如果要使用为您自动构建的更高级别的SQL以及Python对象的自动持久性，请首先进行本教程。</font></font></p>
+<ul class="simple">
+<li><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请先阅读以下内容：</font></font></strong>
+<a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/tutorial.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对象关系教程</font></font></span></a></p></li>
+<li><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ORM配置：</font></font></strong>
+<a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/mapper_config.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">映射器配置</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/relationships.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关系配置</font></font></span></a></p></li>
+<li><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置扩展：</font></font></strong>
+<a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/extensions/declarative/index.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">声明式扩展</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/extensions/associationproxy.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">协会代理</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/extensions/hybrid.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">混合属性</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/extensions/automap.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自动贴图</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/extensions/mutable.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可变标量</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/extensions/indexable.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可索引的</font></font></span></a></p></li>
+<li><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ORM使用情况：</font></font></strong>
+<a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/session.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会话使用情况和准则</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/loading_objects.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加载的对象</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/extensions/baked.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">缓存查询扩展</font></font></span></a></p></li>
+<li><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展ORM：</font></font></strong>
+<a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/extending.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ORM事件和内部</font></font></span></a></p></li>
+<li><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他：</font></font></strong>
+<a class="reference internal" href="https://docs.sqlalchemy.org/en/13/orm/examples.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实例介绍</font></font></span></a></p></li>
+</ul>
+</div>
+<div class="section" id="sqlalchemy-core">
+<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQLAlchemy核心</font></font><a class="headerlink" href="https://docs.sqlalchemy.org/en/13/#sqlalchemy-core" title="固定到该标题"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此处记录了SQLAlchemy的SQL呈现引擎的广度，DBAPI集成，事务集成和模式描述服务。</font><font style="vertical-align: inherit;">与ORM的以域为中心的用法相反，SQL表达式语言提供了以模式为中心的用法范例。</font></font></p>
+<ul class="simple">
+<li><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请先阅读以下内容：</font></font></strong>
+<a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/tutorial.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQL表达式语言教程</font></font></span></a></p></li>
+<li><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有内置的SQL：</font></font></strong>
+<a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/expression_api.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQL Expression API</font></font></span></a></p></li>
+<li><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">引擎，连接，池：</font></font></strong>
+<a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/engines.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">引擎配置</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/connections.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">连接，交易</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/pooling.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">连接池</font></font></span></a></p></li>
+<li><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模式定义：</font></font></strong>
+<a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/schema.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/metadata.html"><span class="std std-ref"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">表和列</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/reflection.html"><span class="std std-ref"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据库内省（反射）</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/defaults.html"><span class="std std-ref"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">插入/更新默认值</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/constraints.html"><span class="std std-ref"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">约束和指标</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/ddl.html"><span class="std std-ref"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用数据定义语言（DDL）</font></font></span></a></p></li>
+<li><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据类型：</font></font></strong>
+<a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/types.html"><span class="std std-ref"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/custom_types.html#types-custom"><span class="std std-ref"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建立自订类型</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/type_api.html#types-api"><span class="std std-ref"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">API</font></font></span></a></p></li>
+<li><p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">核心基础知识：</font></font></strong>
+<a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/api_basics.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/inspection.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行时检查API</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/event.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">活动系统</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/events.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">核心事件接口</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/core/compiler.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建自定义的SQL构造</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |</font></font></p></li>
+</ul>
+</div>
+<div class="section" id="dialect-documentation">
+<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方言文档</font></font><a class="headerlink" href="https://docs.sqlalchemy.org/en/13/#dialect-documentation" title="固定到该标题"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">话</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是系统的SQLAlchemy使用与各种类型DBAPIs和数据库进行通信。</font><font style="vertical-align: inherit;">本节介绍有关各个方言的注释，选项和用法模式。</font></font></p>
+<p><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/dialects/postgresql.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PostgreSQL</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/dialects/mysql.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MySQL</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/dialects/sqlite.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQLite</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/dialects/oracle.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">甲骨文</font></font></span></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/dialects/mssql.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Microsoft SQL服务器</font></font></span></a></p>
+<p><a class="reference internal" href="https://docs.sqlalchemy.org/en/13/dialects/index.html"><span class="doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多方言…</font></font></span></a></p>
+</div>
+</div>
+
+    </div>
+
+</div>
+
+<div id="docs-bottom-navigation" class="docs-navigation-links">
+
+    <div id="docs-copyright"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        © </font></font><a href="https://docs.sqlalchemy.org/en/13/copyright.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版权所有</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 2007-2020，SQLAlchemy的作者和贡献者。</font><font style="vertical-align: inherit;">使用</font></font><a href="http://sphinx.pocoo.org/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sphinx</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 2.4.4 </font><font style="vertical-align: inherit;">创建</font><font style="vertical-align: inherit;">。
+    </font></font></div>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div> <!-- end #main-body -->
+
+
+    
+
+    
+
+<div id="footer">
+    <div class="snd-ad">
+    <div class="box banner">
+        <p>
+        </p><div class="bsa-ad">
+      <div class="partner">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQLAlchemy </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">赞助商</font></font></strong></p>
+      </div>
+      <div class="bsa-cpc"></div>
+    </div>
+    <script src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/monetization.js.下载" type="text/javascript"></script>
+    <script>
+    (function() {
+      if (typeof _bsa !== 'undefined' && _bsa) {
+        _bsa.init('default', 'CKYD62QL', 'placement:sqlalchemyorg', {
+          target: '.bsa-cpc',
+          align: 'horizontal',
+          disable_css: 'true'
+        });
+      }
+    })();
+    window.onload = function() {
+      if (document.getElementsByClassName("_default_").length > 0) {
+        document.getElementsByClassName("bsa-ad")[0].style.display = "flex";
+      }
+    }
+    </script>
+        <p></p>
+    </div>
+    </div>
+
+    <div class="pypowered"><a href="http://www.python.org/" title="Python语言网站"><img src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/python-logo.gif" width="88" height="30" alt="蟒蛇" class="pypowered"></a></div>
+
+    <div class="copyright">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站内容的版权©SQLAlchemy作者和贡献者。</font><font style="vertical-align: inherit;">SQLAlchemy及其文档已获得MIT许可。</font></font></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQLAlchemy是Michael Bayer的商标。</font><font style="vertical-align: inherit;">mike（＆）zzzcomputing.com保留所有权利。</font></font></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由</font></font><a href="https://bitbucket.org/zzzeek/zeekofile/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">zeekofile创建的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站
+         </font><font style="vertical-align: inherit;">，非常感谢</font></font><a href="https://github.com/EnigmaCurry/blogofile"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Blogofile</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+        项目。</font></font></p>
+     </div>
+
+    <br clear="all">
+
+</div>
+
+
+
+     <!-- End original user content -->
+
+    
+
+
+
+
+</div> <!-- end #wrap -->
+
+
+    
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+          URL_ROOT:    './',
+          VERSION:     '1.3.15',
+          COLLAPSE_MODINDEX: false,
+          FILE_SUFFIX: '.html'
+      };
+    </script>
+
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/documentation_options.js.下载"></script>
+
+    <!-- begin iterate through sphinx environment script_files -->
+        <script type="text/javascript" src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/jquery.js.下载"></script>
+        <script type="text/javascript" src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/underscore.js.下载"></script>
+        <script type="text/javascript" src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/doctools.js.下载"></script>
+        <script type="text/javascript" src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/language_data.js.下载"></script>
+    <!-- end iterate through sphinx environment script_files -->
+
+    <script type="text/javascript" src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/detectmobile.js.下载"></script>
+    <script type="text/javascript" src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/init.js.下载"></script>
+
+
+
+
+<script type="text/javascript" src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/doc_versions.js.下载"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28532944-1']);
+  _gaq.push(['_setDomainName', 'sqlalchemy.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./SQLAlchemy文档— SQLAlchemy 1.3文档_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

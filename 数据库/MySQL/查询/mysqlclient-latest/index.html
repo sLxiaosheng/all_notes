@@ -1,0 +1,1739 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>MySQLdb 1.2.4b4 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/_static/css/theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html#document-index" class="icon icon-home"> MySQLdb
+          
+
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-user_guide">MySQLdb User’s Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#mysqldb-mysql">MySQLdb._mysql</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#mysql-c-api-translation">MySQL C API translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#mysql-c-api-function-mapping">MySQL C API function mapping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#some-mysql-examples">Some _mysql examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#mysqldb">MySQLdb</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#functions-and-attributes">Functions and attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#connection-objects">Connection Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#cursor-objects">Cursor Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#some-examples">Some examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#using-and-extending">Using and extending</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-MySQLdb">MySQLdb Package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#id1"><code class="docutils literal notranslate"><span class="pre">MySQLdb</span></code> Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#module-MySQLdb.connections"><code class="docutils literal notranslate"><span class="pre">connections</span></code> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#module-MySQLdb.converters"><code class="docutils literal notranslate"><span class="pre">converters</span></code> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#module-MySQLdb.cursors"><code class="docutils literal notranslate"><span class="pre">cursors</span></code> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#module-MySQLdb.times"><code class="docutils literal notranslate"><span class="pre">times</span></code> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#document-MySQLdb.constants">constants Package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-FAQ">MySQLdb Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#build-errors">Build Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#importerror">ImportError</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#my-data-disappeared-or-won-t-go-away">My data disappeared! (or won’t go away!)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#other-errors">Other Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#other-resources">Other Resources</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html#document-index">MySQLdb</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html#document-index">Docs</a> &raquo;</li>
+        
+      <li>MySQLdb 1.2.4b4 documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/PyMySQL/mysqlclient-python/blob/master/doc/index.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-mysqldb-s-documentation">
+<h1>Welcome to MySQLdb’s documentation!<a class="headerlink" href="#welcome-to-mysqldb-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<span id="document-user_guide"></span><div class="section" id="mysqldb-user-s-guide">
+<h2><a class="toc-backref" href="#id1">MySQLdb User’s Guide</a><a class="headerlink" href="#mysqldb-user-s-guide" title="Permalink to this headline">¶</a></h2>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#mysqldb-user-s-guide" id="id1">MySQLdb User’s Guide</a><ul>
+<li><a class="reference internal" href="#introduction" id="id2">Introduction</a></li>
+<li><a class="reference internal" href="#installation" id="id3">Installation</a></li>
+<li><a class="reference internal" href="#mysqldb-mysql" id="id4">MySQLdb._mysql</a><ul>
+<li><a class="reference internal" href="#mysql-c-api-translation" id="id5">MySQL C API translation</a></li>
+<li><a class="reference internal" href="#mysql-c-api-function-mapping" id="id6">MySQL C API function mapping</a></li>
+<li><a class="reference internal" href="#some-mysql-examples" id="id7">Some _mysql examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#mysqldb" id="id8">MySQLdb</a><ul>
+<li><a class="reference internal" href="#functions-and-attributes" id="id9">Functions and attributes</a></li>
+<li><a class="reference internal" href="#connection-objects" id="id10">Connection Objects</a></li>
+<li><a class="reference internal" href="#cursor-objects" id="id11">Cursor Objects</a></li>
+<li><a class="reference internal" href="#some-examples" id="id12">Some examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#using-and-extending" id="id13">Using and extending</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h3><a class="toc-backref" href="#id2">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<p>MySQLdb is an interface to the popular MySQL
+database server that provides the Python database API.</p>
+</div>
+<div class="section" id="installation">
+<h3><a class="toc-backref" href="#id3">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">README</span></code> file has complete installation instructions.</p>
+</div>
+<div class="section" id="mysqldb-mysql">
+<h3><a class="toc-backref" href="#id4">MySQLdb._mysql</a><a class="headerlink" href="#mysqldb-mysql" title="Permalink to this headline">¶</a></h3>
+<p>If you want to write applications which are portable across databases,
+use <a class="reference internal" href="#mysqldb">MySQLdb</a>, and avoid using this module directly. <code class="docutils literal notranslate"><span class="pre">MySQLdb._mysql</span></code>
+provides an interface which mostly implements the MySQL C API. For
+more information, see the <a class="reference external" href="https://dev.mysql.com/doc/">MySQL documentation</a>. The documentation
+for this module is intentionally weak because you probably should use
+the higher-level MySQLdb module. If you really need it, use the
+standard MySQL docs and transliterate as necessary.</p>
+<div class="section" id="mysql-c-api-translation">
+<h4><a class="toc-backref" href="#id5">MySQL C API translation</a><a class="headerlink" href="#mysql-c-api-translation" title="Permalink to this headline">¶</a></h4>
+<p>The MySQL C API has been wrapped in an object-oriented way. The only
+MySQL data structures which are implemented are the <code class="docutils literal notranslate"><span class="pre">MYSQL</span></code>
+(database connection handle) and <code class="docutils literal notranslate"><span class="pre">MYSQL_RES</span></code> (result handle)
+types. In general, any function which takes <code class="docutils literal notranslate"><span class="pre">MYSQL</span> <span class="pre">*mysql</span></code> as an
+argument is now a method of the connection object, and any function
+which takes <code class="docutils literal notranslate"><span class="pre">MYSQL_RES</span> <span class="pre">*result</span></code> as an argument is a method of the
+result object. Functions requiring none of the MySQL data structures
+are implemented as functions in the module. Functions requiring one of
+the other MySQL data structures are generally not implemented.
+Deprecated functions are not implemented. In all cases, the <code class="docutils literal notranslate"><span class="pre">mysql_</span></code>
+prefix is dropped from the name. Most of the <code class="docutils literal notranslate"><span class="pre">conn</span></code> methods listed
+are also available as MySQLdb Connection object methods. Their use is
+non-portable.</p>
+</div>
+<div class="section" id="mysql-c-api-function-mapping">
+<h4><a class="toc-backref" href="#id6">MySQL C API function mapping</a><a class="headerlink" href="#mysql-c-api-function-mapping" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">C API</th>
+<th class="head"><code class="docutils literal notranslate"><span class="pre">_mysql</span></code></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_affected_rows()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.affected_rows()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_autocommit()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.autocommit()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_character_set_name()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.character_set_name()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_close()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.close()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_commit()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.commit()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_connect()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">_mysql.connect()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_data_seek()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">result.data_seek()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_debug()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">_mysql.debug()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_dump_debug_info</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.dump_debug_info()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_escape_string()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">_mysql.escape_string()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_fetch_row()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">result.fetch_row()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_get_character_set_info()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.get_character_set_info()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_get_client_info()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">_mysql.get_client_info()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_get_host_info()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.get_host_info()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_get_proto_info()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.get_proto_info()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_get_server_info()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.get_server_info()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_info()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.info()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_insert_id()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.insert_id()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_num_fields()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">result.num_fields()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_num_rows()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">result.num_rows()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_options()</span></code></td>
+<td>various options to <code class="docutils literal notranslate"><span class="pre">_mysql.connect()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_ping()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.ping()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_query()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.query()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_real_connect()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">_mysql.connect()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_real_query()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.query()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_real_escape_string()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.escape_string()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_rollback()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.rollback()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_row_seek()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">result.row_seek()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_row_tell()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">result.row_tell()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_select_db()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.select_db()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_set_character_set()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.set_character_set()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_ssl_set()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">ssl</span></code> option to <code class="docutils literal notranslate"><span class="pre">_mysql.connect()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_stat()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.stat()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_store_result()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.store_result()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_thread_id()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.thread_id()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">mysql_use_result()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.use_result()</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">mysql_warning_count()</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">conn.warning_count()</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">CLIENT_*</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">MySQLdb.constants.CLIENT.*</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">CR_*</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">MySQLdb.constants.CR.*</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">ER_*</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">MySQLdb.constants.ER.*</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">FIELD_TYPE_*</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">MySQLdb.constants.FIELD_TYPE.*</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">FLAG_*</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">MySQLdb.constants.FLAG.*</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="some-mysql-examples">
+<h4><a class="toc-backref" href="#id7">Some _mysql examples</a><a class="headerlink" href="#some-mysql-examples" title="Permalink to this headline">¶</a></h4>
+<p>Okay, so you want to use <code class="docutils literal notranslate"><span class="pre">_mysql</span></code> anyway. Here are some examples.</p>
+<p>The simplest possible database connection is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">MySQLdb</span> <span class="k">import</span> <span class="n">_mysql</span>
+<span class="n">db</span><span class="o">=</span><span class="n">_mysql</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This creates a connection to the MySQL server running on the local
+machine using the standard UNIX socket (or named pipe on Windows),
+your login name (from the USER environment variable), no password, and
+does not <code class="docutils literal notranslate"><span class="pre">USE</span></code> a database.  Chances are you need to supply more
+information.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">db</span><span class="o">=</span><span class="n">_mysql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span><span class="s2">&quot;joebob&quot;</span><span class="p">,</span><span class="s2">&quot;moonpie&quot;</span><span class="p">,</span><span class="s2">&quot;thangs&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This creates a connection to the MySQL server running on the local
+machine via a UNIX socket (or named pipe), the user name “joebob”, the
+password “moonpie”, and selects the initial database “thangs”.</p>
+<p>We haven’t even begun to touch upon all the parameters <code class="docutils literal notranslate"><span class="pre">connect()</span></code>
+can take.  For this reason, I prefer to use keyword parameters:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">db</span><span class="o">=</span><span class="n">_mysql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span><span class="n">user</span><span class="o">=</span><span class="s2">&quot;joebob&quot;</span><span class="p">,</span>
+                  <span class="n">passwd</span><span class="o">=</span><span class="s2">&quot;moonpie&quot;</span><span class="p">,</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;thangs&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This does exactly what the last example did, but is arguably easier to
+read. But since the default host is “localhost”, and if your login
+name really was “joebob”, you could shorten it to this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">db</span><span class="o">=</span><span class="n">_mysql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">passwd</span><span class="o">=</span><span class="s2">&quot;moonpie&quot;</span><span class="p">,</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;thangs&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>UNIX sockets and named pipes don’t work over a network, so if you
+specify a host other than localhost, TCP will be used, and you can
+specify an odd port if you need to (the default port is 3306):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">db</span><span class="o">=</span><span class="n">_mysql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s2">&quot;outhouse&quot;</span><span class="p">,</span><span class="n">port</span><span class="o">=</span><span class="mi">3307</span><span class="p">,</span><span class="n">passwd</span><span class="o">=</span><span class="s2">&quot;moonpie&quot;</span><span class="p">,</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;thangs&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If you really had to, you could connect to the local host with TCP by
+specifying the full host name, or 127.0.0.1.</p>
+<p>Generally speaking, putting passwords in your code is not such a good
+idea:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">db</span><span class="o">=</span><span class="n">_mysql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s2">&quot;outhouse&quot;</span><span class="p">,</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;thangs&quot;</span><span class="p">,</span><span class="n">read_default_file</span><span class="o">=</span><span class="s2">&quot;~/.my.cnf&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This does what the previous example does, but gets the username and
+password and other parameters from ~/.my.cnf (UNIX-like systems). Read
+about <a class="reference external" href="http://dev.mysql.com/doc/refman/en/option-files.html">option files</a> for more details.</p>
+<p>So now you have an open connection as <code class="docutils literal notranslate"><span class="pre">db</span></code> and want to do a
+query. Well, there are no cursors in MySQL, and no parameter
+substitution, so you have to pass a complete query string to
+<code class="docutils literal notranslate"><span class="pre">db.query()</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;SELECT spam, eggs, sausage FROM breakfast</span>
+<span class="s2">         WHERE price &lt; 5&quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>There’s no return value from this, but exceptions can be raised. The
+exceptions are defined in a separate module, <code class="docutils literal notranslate"><span class="pre">MySQLdb._exceptions</span></code>,
+but <code class="docutils literal notranslate"><span class="pre">MySQLdb._mysql</span></code> exports them. Read DB API specification <a class="reference external" href="https://www.python.org/dev/peps/pep-0249/">PEP-249</a> to
+find out what they are, or you can use the catch-all <code class="docutils literal notranslate"><span class="pre">MySQLError</span></code>.</p>
+<p>At this point your query has been executed and you need to get the
+results. You have two options:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">r</span><span class="o">=</span><span class="n">db</span><span class="o">.</span><span class="n">store_result</span><span class="p">()</span>
+<span class="c1"># ...or...</span>
+<span class="n">r</span><span class="o">=</span><span class="n">db</span><span class="o">.</span><span class="n">use_result</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Both methods return a result object. What’s the difference?
+<code class="docutils literal notranslate"><span class="pre">store_result()</span></code> returns the entire result set to the client
+immediately. If your result set is really large, this could be a
+problem. One way around this is to add a <code class="docutils literal notranslate"><span class="pre">LIMIT</span></code> clause to your
+query, to limit the number of rows returned. The other is to use
+<code class="docutils literal notranslate"><span class="pre">use_result()</span></code>, which keeps the result set in the server and sends
+it row-by-row when you fetch. This does, however, tie up server
+resources, and it ties up the connection: You cannot do any more
+queries until you have fetched <strong>all</strong> the rows. Generally I
+recommend using <code class="docutils literal notranslate"><span class="pre">store_result()</span></code> unless your result set is really
+huge and you can’t use <code class="docutils literal notranslate"><span class="pre">LIMIT</span></code> for some reason.</p>
+<p>Now, for actually getting real results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span><span class="o">.</span><span class="n">fetch_row</span><span class="p">()</span>
+<span class="go">((&#39;3&#39;,&#39;2&#39;,&#39;0&#39;),)</span>
+</pre></div>
+</div>
+<p>This might look a little odd. The first thing you should know is,
+<code class="docutils literal notranslate"><span class="pre">fetch_row()</span></code> takes some additional parameters. The first one is,
+how many rows (<code class="docutils literal notranslate"><span class="pre">maxrows</span></code>) should be returned. By default, it returns
+one row. It may return fewer rows than you asked for, but never
+more. If you set <code class="docutils literal notranslate"><span class="pre">maxrows=0</span></code>, it returns all rows of the result
+set. If you ever get an empty tuple back, you ran out of rows.</p>
+<p>The second parameter (<code class="docutils literal notranslate"><span class="pre">how</span></code>) tells it how the row should be
+represented. By default, it is zero which means, return as a tuple.
+<code class="docutils literal notranslate"><span class="pre">how=1</span></code> means, return it as a dictionary, where the keys are the
+column names, or <code class="docutils literal notranslate"><span class="pre">table.column</span></code> if there are two columns with the
+same name (say, from a join). <code class="docutils literal notranslate"><span class="pre">how=2</span></code> means the same as <code class="docutils literal notranslate"><span class="pre">how=1</span></code>
+except that the keys are <em>always</em> <code class="docutils literal notranslate"><span class="pre">table.column</span></code>; this is for
+compatibility with the old <code class="docutils literal notranslate"><span class="pre">Mysqldb</span></code> module.</p>
+<p>OK, so why did we get a 1-tuple with a tuple inside? Because we
+implicitly asked for one row, since we didn’t specify <code class="docutils literal notranslate"><span class="pre">maxrows</span></code>.</p>
+<p>The other oddity is: Assuming these are numeric columns, why are they
+returned as strings? Because MySQL returns all data as strings and
+expects you to convert it yourself. This would be a real pain in the
+ass, but in fact, <code class="docutils literal notranslate"><span class="pre">MySQLdb._mysql</span></code> can do this for you. (And <code class="docutils literal notranslate"><span class="pre">MySQLdb</span></code>
+does do this for you.) To have automatic type conversion done, you
+need to create a type converter dictionary, and pass this to
+<code class="docutils literal notranslate"><span class="pre">connect()</span></code> as the <code class="docutils literal notranslate"><span class="pre">conv</span></code> keyword parameter.</p>
+<p>The keys of <code class="docutils literal notranslate"><span class="pre">conv</span></code> should be MySQL column types, which in the
+C API are <code class="docutils literal notranslate"><span class="pre">FIELD_TYPE_*</span></code>. You can get these values like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">MySQLdb.constants</span> <span class="k">import</span> <span class="n">FIELD_TYPE</span>
+</pre></div>
+</div>
+<p>By default, any column type that can’t be found in <code class="docutils literal notranslate"><span class="pre">conv</span></code> is
+returned as a string, which works for a lot of stuff. For our
+purposes, we probably want this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">my_conv</span> <span class="o">=</span> <span class="p">{</span> <span class="n">FIELD_TYPE</span><span class="o">.</span><span class="n">LONG</span><span class="p">:</span> <span class="nb">int</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p>This means, if it’s a <code class="docutils literal notranslate"><span class="pre">FIELD_TYPE_LONG</span></code>, call the builtin <code class="docutils literal notranslate"><span class="pre">int()</span></code>
+function on it.  Note that <code class="docutils literal notranslate"><span class="pre">FIELD_TYPE_LONG</span></code> is an <code class="docutils literal notranslate"><span class="pre">INTEGER</span></code>
+column, which corresponds to a C <code class="docutils literal notranslate"><span class="pre">long</span></code>, which is also the type used
+for a normal Python integer. But beware: If it’s really an <code class="docutils literal notranslate"><span class="pre">UNSIGNED</span>
+<span class="pre">INTEGER</span></code> column, this could cause overflows. For this reason,
+<code class="docutils literal notranslate"><span class="pre">MySQLdb</span></code> actually uses <code class="docutils literal notranslate"><span class="pre">long()</span></code> to do the conversion. But we’ll
+ignore this potential problem for now.</p>
+<p>Then if you use <code class="docutils literal notranslate"><span class="pre">db=_mysql.connect(conv=my_conv...)</span></code>, the
+results will come back <code class="docutils literal notranslate"><span class="pre">((3,</span> <span class="pre">2,</span> <span class="pre">0),)</span></code>, which is what you would
+expect.</p>
+</div>
+</div>
+<div class="section" id="mysqldb">
+<h3><a class="toc-backref" href="#id8">MySQLdb</a><a class="headerlink" href="#mysqldb" title="Permalink to this headline">¶</a></h3>
+<p>MySQLdb is a thin Python wrapper around <code class="docutils literal notranslate"><span class="pre">_mysql</span></code> which makes it
+compatible with the Python DB API interface (version 2).  In reality,
+a fair amount of the code which implements the API is in <code class="docutils literal notranslate"><span class="pre">_mysql</span></code>
+for the sake of efficiency.</p>
+<p>The DB API specification <a class="reference external" href="https://www.python.org/dev/peps/pep-0249/">PEP-249</a> should be your primary guide for
+using this module. Only deviations from the spec and other
+database-dependent things will be documented here.</p>
+<div class="section" id="functions-and-attributes">
+<h4><a class="toc-backref" href="#id9">Functions and attributes</a><a class="headerlink" href="#functions-and-attributes" title="Permalink to this headline">¶</a></h4>
+<p>Only a few top-level functions and attributes are defined within
+MySQLdb.</p>
+<dl class="docutils">
+<dt>connect(parameters…)</dt>
+<dd><p class="first">Constructor for creating a connection to the
+database. Returns a Connection Object. Parameters are the
+same as for the MySQL C API.  In addition, there are a few
+additional keywords that correspond to what you would pass
+<code class="docutils literal notranslate"><span class="pre">mysql_options()</span></code> before connecting. Note that some
+parameters must be specified as keyword arguments! The
+default value for each parameter is NULL or zero, as
+appropriate. Consult the MySQL documentation for more
+details. The important parameters are:</p>
+<dl class="last docutils">
+<dt>host</dt>
+<dd>name of host to connect to. Default: use the local host
+via a UNIX socket (where applicable)</dd>
+<dt>user</dt>
+<dd>user to authenticate as. Default: current effective user.</dd>
+<dt>passwd</dt>
+<dd>password to authenticate with. Default: no password.</dd>
+<dt>db</dt>
+<dd>database to use. Default: no default database.</dd>
+<dt>port</dt>
+<dd>TCP port of MySQL server. Default: standard port (3306).</dd>
+<dt>unix_socket</dt>
+<dd>location of UNIX socket. Default: use default location or
+TCP for remote hosts.</dd>
+<dt>conv</dt>
+<dd>type conversion dictionary.  Default: a copy of
+<code class="docutils literal notranslate"><span class="pre">MySQLdb.converters.conversions</span></code></dd>
+<dt>compress</dt>
+<dd>Enable protocol compression. Default: no compression.</dd>
+<dt>connect_timeout</dt>
+<dd>Abort if connect is not completed within
+given number of seconds. Default: no timeout (?)</dd>
+<dt>named_pipe</dt>
+<dd>Use a named pipe (Windows). Default: don’t.</dd>
+<dt>init_command</dt>
+<dd>Initial command to issue to server upon
+connection. Default: Nothing.</dd>
+<dt>read_default_file</dt>
+<dd>MySQL configuration file to read; see
+the MySQL documentation for <code class="docutils literal notranslate"><span class="pre">mysql_options()</span></code>.</dd>
+<dt>read_default_group</dt>
+<dd>Default group to read; see the MySQL
+documentation for <code class="docutils literal notranslate"><span class="pre">mysql_options()</span></code>.</dd>
+<dt>cursorclass</dt>
+<dd>cursor class that <code class="docutils literal notranslate"><span class="pre">cursor()</span></code> uses, unless
+overridden. Default: <code class="docutils literal notranslate"><span class="pre">MySQLdb.cursors.Cursor</span></code>.  <em>This
+must be a keyword parameter.</em></dd>
+<dt>use_unicode</dt>
+<dd><p class="first">If True, CHAR and VARCHAR and TEXT columns are returned as
+Unicode strings, using the configured character set. It is
+best to set the default encoding in the server
+configuration, or client configuration (read with
+read_default_file).  If you change the character set after
+connecting (MySQL-4.1 and later), you’ll need to put the
+correct character set name in connection.charset.</p>
+<p>If False, text-like columns are returned as normal strings,
+but you can always write Unicode strings.</p>
+<p class="last"><em>This must be a keyword parameter.</em></p>
+</dd>
+<dt>charset</dt>
+<dd><p class="first">If present, the connection character set will be changed
+to this character set, if they are not equal. Support for
+changing the character set requires MySQL-4.1 and later
+server; if the server is too old, UnsupportedError will be
+raised. This option implies use_unicode=True, but you can
+override this with use_unicode=False, though you probably
+shouldn’t.</p>
+<p>If not present, the default character set is used.</p>
+<p class="last"><em>This must be a keyword parameter.</em></p>
+</dd>
+<dt>sql_mode</dt>
+<dd><p class="first">If present, the session SQL mode will be set to the given
+string. For more information on sql_mode, see the MySQL
+documentation. Only available for 4.1 and newer servers.</p>
+<p>If not present, the session SQL mode will be unchanged.</p>
+<p class="last"><em>This must be a keyword parameter.</em></p>
+</dd>
+<dt>ssl</dt>
+<dd>This parameter takes a dictionary or mapping, where the
+keys are parameter names used by the <a class="reference external" href="http://dev.mysql.com/doc/refman/en/mysql-ssl-set.html">mysql_ssl_set</a> MySQL
+C API call. If this is set, it initiates an SSL connection
+to the server; if there is no SSL support in the client,
+an exception is raised. <em>This must be a keyword
+parameter.</em></dd>
+</dl>
+</dd>
+</dl>
+<dl class="docutils">
+<dt>apilevel</dt>
+<dd>String constant stating the supported DB API level. ‘2.0’</dd>
+<dt>threadsafety</dt>
+<dd><p class="first">Integer constant stating the level of thread safety the
+interface supports. This is set to 1, which means: Threads may
+share the module.</p>
+<p>The MySQL protocol can not handle multiple threads using the
+same connection at once. Some earlier versions of MySQLdb
+utilized locking to achieve a threadsafety of 2. While this is
+not terribly hard to accomplish using the standard Cursor class
+(which uses <code class="docutils literal notranslate"><span class="pre">mysql_store_result()</span></code>), it is complicated by
+SSCursor (which uses <code class="docutils literal notranslate"><span class="pre">mysql_use_result()</span></code>; with the latter you
+must ensure all the rows have been read before another query can
+be executed.  It is further complicated by the addition of
+transactions, since transactions start when a cursor executes a
+query, but end when <code class="docutils literal notranslate"><span class="pre">COMMIT</span></code> or <code class="docutils literal notranslate"><span class="pre">ROLLBACK</span></code> is executed by
+the Connection object.  Two threads simply cannot share a
+connection while a transaction is in progress, in addition to
+not being able to share it during query execution. This
+excessively complicated the code to the point where it just
+isn’t worth it.</p>
+<p class="last">The general upshot of this is: Don’t share connections between
+threads. It’s really not worth your effort or mine, and in the
+end, will probably hurt performance, since the MySQL server runs
+a separate thread for each connection.  You can certainly do
+things like cache connections in a pool, and give those
+connections to one thread at a time. If you let two threads use
+a connection simultaneously, the MySQL client library will
+probably upchuck and die.  You have been warned.</p>
+</dd>
+<dt>charset</dt>
+<dd>The character set used by the connection. In MySQL-4.1 and newer,
+it is possible (but not recommended) to change the connection’s
+character set with an SQL statement. If you do this, you’ll also
+need to change this attribute. Otherwise, you’ll get encoding
+errors.</dd>
+<dt>paramstyle</dt>
+<dd><p class="first">String constant stating the type of parameter marker formatting
+expected by the interface. Set to ‘format’ = ANSI C printf
+format codes, e.g. ‘…WHERE name=%s’. If a mapping object is
+used for conn.execute(), then the interface actually uses
+‘pyformat’ = Python extended format codes, e.g. ‘…WHERE
+name=%(name)s’. However, the API does not presently allow the
+specification of more than one style in paramstyle.</p>
+<p>Note that any literal percent signs in the query string passed
+to execute() must be escaped, i.e. %%.</p>
+<p class="last">Parameter placeholders can <strong>only</strong> be used to insert column
+values. They can <strong>not</strong> be used for other parts of SQL, such as
+table names, statements, etc.</p>
+</dd>
+<dt>conv</dt>
+<dd><p class="first">A dictionary or mapping which controls how types are converted
+from MySQL to Python and vice versa.</p>
+<p>If the key is a MySQL type (from <code class="docutils literal notranslate"><span class="pre">FIELD_TYPE.*</span></code>), then the value
+can be either:</p>
+<ul class="simple">
+<li>a callable object which takes a string argument (the MySQL
+value), returning a Python value</li>
+<li>a sequence of 2-tuples, where the first value is a combination
+of flags from <code class="docutils literal notranslate"><span class="pre">MySQLdb.constants.FLAG</span></code>, and the second value
+is a function as above. The sequence is tested until the flags
+on the field match those of the first value. If both values
+are None, then the default conversion is done. Presently this
+is only used to distinguish TEXT and BLOB columns.</li>
+</ul>
+<p>If the key is a Python type or class, then the value is a
+callable Python object (usually a function) taking two arguments
+(value to convert, and the conversion dictionary) which converts
+values of this type to a SQL literal string value.</p>
+<p class="last">This is initialized with reasonable defaults for most
+types. When creating a Connection object, you can pass your own
+type converter dictionary as a keyword parameter. Otherwise, it
+uses a copy of <code class="docutils literal notranslate"><span class="pre">MySQLdb.converters.conversions</span></code>.  Several
+non-standard types are returned as strings, which is how MySQL
+returns all columns. For more details, see the built-in module
+documentation.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="connection-objects">
+<h4><a class="toc-backref" href="#id10">Connection Objects</a><a class="headerlink" href="#connection-objects" title="Permalink to this headline">¶</a></h4>
+<p>Connection objects are returned by the <code class="docutils literal notranslate"><span class="pre">connect()</span></code> function.</p>
+<dl class="docutils">
+<dt>commit()</dt>
+<dd>If the database and the tables support transactions, this
+commits the current transaction; otherwise this method
+successfully does nothing.</dd>
+<dt>rollback()</dt>
+<dd>If the database and tables support transactions, this rolls back
+(cancels) the current transaction; otherwise a
+<code class="docutils literal notranslate"><span class="pre">NotSupportedError</span></code> is raised.</dd>
+<dt>cursor([cursorclass])</dt>
+<dd>MySQL does not support cursors; however, cursors are easily
+emulated.  You can supply an alternative cursor class as an
+optional parameter.  If this is not present, it defaults to the
+value given when creating the connection object, or the standard
+<code class="docutils literal notranslate"><span class="pre">Cursor</span></code> class. Also see the additional supplied cursor
+classes in the usage section.</dd>
+</dl>
+<p>There are many more methods defined on the connection object which
+are MySQL-specific. For more information on them, consult the internal
+documentation using <code class="docutils literal notranslate"><span class="pre">pydoc</span></code>.</p>
+</div>
+<div class="section" id="cursor-objects">
+<h4><a class="toc-backref" href="#id11">Cursor Objects</a><a class="headerlink" href="#cursor-objects" title="Permalink to this headline">¶</a></h4>
+<dl class="docutils">
+<dt>callproc(procname, args)</dt>
+<dd><p class="first">Calls stored procedure procname with the sequence of arguments
+in args. Returns the original arguments. Stored procedure
+support only works with MySQL-5.0 and newer.</p>
+<p><strong>Compatibility note:</strong> <a class="reference external" href="https://www.python.org/dev/peps/pep-0249/">PEP-249</a> specifies that if there are
+OUT or INOUT parameters, the modified values are to be
+returned. This is not consistently possible with MySQL. Stored
+procedure arguments must be passed as server variables, and
+can only be returned with a SELECT statement. Since a stored
+procedure may return zero or more result sets, it is impossible
+for MySQLdb to determine if there are result sets to fetch
+before the modified parmeters are accessible.</p>
+<p>The parameters are stored in the server as &#64;_*procname*_*n*,
+where <em>n</em> is the position of the parameter. I.e., if you
+cursor.callproc(‘foo’, (a, b, c)), the parameters will be
+accessible by a SELECT statement as &#64;_foo_0, &#64;_foo_1, and
+&#64;_foo_2.</p>
+<p class="last"><strong>Compatibility note:</strong> It appears that the mere act of
+executing the CALL statement produces an empty result set, which
+appears after any result sets which might be generated by the
+stored procedure. Thus, you will always need to use nextset() to
+advance result sets.</p>
+</dd>
+<dt>close()</dt>
+<dd>Closes the cursor. Future operations raise <code class="docutils literal notranslate"><span class="pre">ProgrammingError</span></code>.
+If you are using server-side cursors, it is very important to
+close the cursor when you are done with it and before creating a
+new one.</dd>
+<dt>info()</dt>
+<dd>Returns some information about the last query. Normally
+you don’t need to check this. If there are any MySQL
+warnings, it will cause a Warning to be issued through
+the Python warning module. By default, Warning causes a
+message to appear on the console. However, it is possible
+to filter these out or cause Warning to be raised as exception.
+See the MySQL docs for <code class="docutils literal notranslate"><span class="pre">mysql_info()</span></code>, and the Python warning
+module. (Non-standard)</dd>
+<dt>setinputsizes()</dt>
+<dd>Does nothing, successfully.</dd>
+<dt>setoutputsizes()</dt>
+<dd>Does nothing, successfully.</dd>
+<dt>nextset()</dt>
+<dd><p class="first">Advances the cursor to the next result set, discarding the remaining
+rows in the current result set. If there are no additional result
+sets, it returns None; otherwise it returns a true value.</p>
+<p class="last">Note that MySQL doesn’t support multiple result sets until 4.1.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="some-examples">
+<h4><a class="toc-backref" href="#id12">Some examples</a><a class="headerlink" href="#some-examples" title="Permalink to this headline">¶</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">connect()</span></code> method works nearly the same as with <a href="#id14"><span class="problematic" id="id15">`_mysql`_</span></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">MySQLdb</span>
+<span class="n">db</span><span class="o">=</span><span class="n">MySQLdb</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">passwd</span><span class="o">=</span><span class="s2">&quot;moonpie&quot;</span><span class="p">,</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;thangs&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To perform a query, you first need a cursor, and then you can execute
+queries on it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="o">=</span><span class="n">db</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<span class="n">max_price</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;SELECT spam, eggs, sausage FROM breakfast</span>
+<span class="s2">          WHERE price &lt; </span><span class="si">%s</span><span class="s2">&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">max_price</span><span class="p">,))</span>
+</pre></div>
+</div>
+<p>In this example, <code class="docutils literal notranslate"><span class="pre">max_price=5</span></code> Why, then, use <code class="docutils literal notranslate"><span class="pre">%s</span></code> in the
+string? Because MySQLdb will convert it to a SQL literal value, which
+is the string ‘5’. When it’s finished, the query will actually say,
+“…WHERE price &lt; 5”.</p>
+<p>Why the tuple? Because the DB API requires you to pass in any
+parameters as a sequence. Due to the design of the parser, (max_price)
+is interpreted as using algebraic grouping and simply as max_price and
+not a tuple. Adding a comma, i.e. (max_price,) forces it to make a
+tuple.</p>
+<p>And now, the results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()</span>
+<span class="go">(3L, 2L, 0L)</span>
+</pre></div>
+</div>
+<p>Quite unlike the <code class="docutils literal notranslate"><span class="pre">_mysql</span></code> example, this returns a single tuple,
+which is the row, and the values are properly converted by default…
+except… What’s with the L’s?</p>
+<p>As mentioned earlier, while MySQL’s INTEGER column translates
+perfectly into a Python integer, UNSIGNED INTEGER could overflow, so
+these values are converted to Python long integers instead.</p>
+<p>If you wanted more rows, you could use <code class="docutils literal notranslate"><span class="pre">c.fetchmany(n)</span></code> or
+<code class="docutils literal notranslate"><span class="pre">c.fetchall()</span></code>. These do exactly what you think they do. On
+<code class="docutils literal notranslate"><span class="pre">c.fetchmany(n)</span></code>, the <code class="docutils literal notranslate"><span class="pre">n</span></code> is optional and defaults to
+<code class="docutils literal notranslate"><span class="pre">c.arraysize</span></code>, which is normally 1. Both of these methods return a
+sequence of rows, or an empty sequence if there are no more rows.  If
+you use a weird cursor class, the rows themselves might not be tuples.</p>
+<p>Note that in contrast to the above, <code class="docutils literal notranslate"><span class="pre">c.fetchone()</span></code> returns <code class="docutils literal notranslate"><span class="pre">None</span></code>
+when there are no more rows to fetch.</p>
+<p>The only other method you are very likely to use is when you have to
+do a multi-row insert:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span>
+      <span class="sd">&quot;&quot;&quot;INSERT INTO breakfast (name, spam, eggs, sausage, price)</span>
+<span class="sd">      VALUES (%s, %s, %s, %s, %s)&quot;&quot;&quot;</span><span class="p">,</span>
+      <span class="p">[</span>
+      <span class="p">(</span><span class="s2">&quot;Spam and Sausage Lover&#39;s Plate&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mf">7.95</span> <span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;Not So Much Spam Plate&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">3.95</span> <span class="p">),</span>
+      <span class="p">(</span><span class="s2">&quot;Don&#39;t Wany ANY SPAM! Plate&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">5.95</span> <span class="p">)</span>
+      <span class="p">]</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>Here we are inserting three rows of five values. Notice that there is
+a mix of types (strings, ints, floats) though we still only use
+<code class="docutils literal notranslate"><span class="pre">%s</span></code>. And also note that we only included format strings for one
+row. MySQLdb picks those out and duplicates them for each row.</p>
+</div>
+</div>
+<div class="section" id="using-and-extending">
+<h3><a class="toc-backref" href="#id13">Using and extending</a><a class="headerlink" href="#using-and-extending" title="Permalink to this headline">¶</a></h3>
+<p>In general, it is probably wise to not directly interact with the DB
+API except for small applications. Databases, even SQL databases, vary
+widely in capabilities and may have non-standard features. The DB API
+does a good job of providing a reasonably portable interface but some
+methods are non-portable. Specifically, the parameters accepted by
+<code class="docutils literal notranslate"><span class="pre">connect()</span></code> are completely implementation-dependent.</p>
+<p>If you believe your application may need to run on several different
+databases, the author recommends the following approach, based on
+personal experience: Write a simplified API for your application which
+implements the specific queries and operations your application needs
+to perform. Implement this API as a base class which should be have
+few database dependencies, and then derive a subclass from this which
+implements the necessary dependencies. In this way, porting your
+application to a new database should be a relatively simple matter of
+creating a new subclass, assuming the new database is reasonably
+standard.</p>
+<p>Because MySQLdb’s Connection and Cursor objects are written in Python,
+you can easily derive your own subclasses. There are several Cursor
+classes in MySQLdb.cursors:</p>
+<dl class="docutils">
+<dt>BaseCursor</dt>
+<dd>The base class for Cursor objects.  This does not raise Warnings.</dd>
+<dt>CursorStoreResultMixIn</dt>
+<dd>Causes the Cursor to use the <code class="docutils literal notranslate"><span class="pre">mysql_store_result()</span></code> function to
+get the query result. The entire result set is stored on the
+client side.</dd>
+<dt>CursorUseResultMixIn</dt>
+<dd>Causes the cursor to use the <code class="docutils literal notranslate"><span class="pre">mysql_use_result()</span></code> function to
+get the query result. The result set is stored on the server side
+and is transferred row by row using fetch operations.</dd>
+<dt>CursorTupleRowsMixIn</dt>
+<dd>Causes the cursor to return rows as a tuple of the column values.</dd>
+<dt>CursorDictRowsMixIn</dt>
+<dd>Causes the cursor to return rows as a dictionary, where the keys
+are column names and the values are column values. Note that if
+the column names are not unique, i.e., you are selecting from two
+tables that share column names, some of them will be rewritten as
+<code class="docutils literal notranslate"><span class="pre">table.column</span></code>.  This can be avoided by using the SQL <code class="docutils literal notranslate"><span class="pre">AS</span></code>
+keyword. (This is yet-another reason not to use <code class="docutils literal notranslate"><span class="pre">*</span></code> in SQL
+queries, particularly where <code class="docutils literal notranslate"><span class="pre">JOIN</span></code> is involved.)</dd>
+<dt>Cursor</dt>
+<dd>The default cursor class. This class is composed of
+<code class="docutils literal notranslate"><span class="pre">CursorWarningMixIn</span></code>, <code class="docutils literal notranslate"><span class="pre">CursorStoreResultMixIn</span></code>,
+<code class="docutils literal notranslate"><span class="pre">CursorTupleRowsMixIn,</span></code> and <code class="docutils literal notranslate"><span class="pre">BaseCursor</span></code>, i.e. it raises
+<code class="docutils literal notranslate"><span class="pre">Warning</span></code>, uses <code class="docutils literal notranslate"><span class="pre">mysql_store_result()</span></code>, and returns rows as
+tuples.</dd>
+<dt>DictCursor</dt>
+<dd>Like <code class="docutils literal notranslate"><span class="pre">Cursor</span></code> except it returns rows as dictionaries.</dd>
+<dt>SSCursor</dt>
+<dd>A “server-side” cursor. Like <code class="docutils literal notranslate"><span class="pre">Cursor</span></code> but uses
+<code class="docutils literal notranslate"><span class="pre">CursorUseResultMixIn</span></code>.  Use only if you are dealing with
+potentially large result sets.</dd>
+<dt>SSDictCursor</dt>
+<dd>Like <code class="docutils literal notranslate"><span class="pre">SSCursor</span></code> except it returns rows as dictionaries.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Title:</th><td class="field-body">MySQLdb: a Python interface for MySQL</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Author:</th><td class="field-body">Andy Dustman</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Version:</th><td class="field-body">$Revision$</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<span id="document-MySQLdb"></span><div class="section" id="mysqldb-package">
+<h2>MySQLdb Package<a class="headerlink" href="#mysqldb-package" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3><a class="reference internal" href="#module-MySQLdb" title="MySQLdb"><code class="xref py py-mod docutils literal notranslate"><span class="pre">MySQLdb</span></code></a> Package<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="module-MySQLdb"></span><p>MySQLdb - A DB API v2.0 compatible interface to MySQL.</p>
+<p>This package is a wrapper around _mysql, which mostly implements the
+MySQL C API.</p>
+<p>connect() – connects to server</p>
+<p>See the C API specification and the MySQL documentation for more info
+on other items.</p>
+<p>For information on how MySQLdb handles type conversion, see the
+MySQLdb.converters module.</p>
+<dl class="function">
+<dt id="MySQLdb.Binary">
+<code class="descclassname">MySQLdb.</code><code class="descname">Binary</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.Binary" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.Connect">
+<code class="descclassname">MySQLdb.</code><code class="descname">Connect</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.Connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory function for connections.Connection.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.Connection">
+<code class="descclassname">MySQLdb.</code><code class="descname">Connection</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.Connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory function for connections.Connection.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MySQLdb.Date">
+<code class="descclassname">MySQLdb.</code><code class="descname">Date</code><a class="headerlink" href="#MySQLdb.Date" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.date</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MySQLdb.Time">
+<code class="descclassname">MySQLdb.</code><code class="descname">Time</code><a class="headerlink" href="#MySQLdb.Time" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.time</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MySQLdb.Timestamp">
+<code class="descclassname">MySQLdb.</code><code class="descname">Timestamp</code><a class="headerlink" href="#MySQLdb.Timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.datetime</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.DateFromTicks">
+<code class="descclassname">MySQLdb.</code><code class="descname">DateFromTicks</code><span class="sig-paren">(</span><em>ticks</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.DateFromTicks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert UNIX ticks into a date instance.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.TimeFromTicks">
+<code class="descclassname">MySQLdb.</code><code class="descname">TimeFromTicks</code><span class="sig-paren">(</span><em>ticks</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.TimeFromTicks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert UNIX ticks into a time instance.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.TimestampFromTicks">
+<code class="descclassname">MySQLdb.</code><code class="descname">TimestampFromTicks</code><span class="sig-paren">(</span><em>ticks</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.TimestampFromTicks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert UNIX ticks into a datetime instance.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.DataError">
+<em class="property">exception </em><code class="descclassname">MySQLdb.</code><code class="descname">DataError</code><a class="headerlink" href="#MySQLdb.DataError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.DatabaseError" title="MySQLdb._exceptions.DatabaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.DatabaseError</span></code></a></p>
+<p>Exception raised for errors that are due to problems with the
+processed data like division by zero, numeric value out of range,
+etc.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.DatabaseError">
+<em class="property">exception </em><code class="descclassname">MySQLdb.</code><code class="descname">DatabaseError</code><a class="headerlink" href="#MySQLdb.DatabaseError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.Error" title="MySQLdb._exceptions.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.Error</span></code></a></p>
+<p>Exception raised for errors that are related to the
+database.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.Error">
+<em class="property">exception </em><code class="descclassname">MySQLdb.</code><code class="descname">Error</code><a class="headerlink" href="#MySQLdb.Error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.MySQLError" title="MySQLdb._exceptions.MySQLError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.MySQLError</span></code></a></p>
+<p>Exception that is the base class of all other error exceptions
+(not Warning).</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.IntegrityError">
+<em class="property">exception </em><code class="descclassname">MySQLdb.</code><code class="descname">IntegrityError</code><a class="headerlink" href="#MySQLdb.IntegrityError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.DatabaseError" title="MySQLdb._exceptions.DatabaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.DatabaseError</span></code></a></p>
+<p>Exception raised when the relational integrity of the database
+is affected, e.g. a foreign key check fails, duplicate key,
+etc.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.InterfaceError">
+<em class="property">exception </em><code class="descclassname">MySQLdb.</code><code class="descname">InterfaceError</code><a class="headerlink" href="#MySQLdb.InterfaceError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.Error" title="MySQLdb._exceptions.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.Error</span></code></a></p>
+<p>Exception raised for errors that are related to the database
+interface rather than the database itself.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.InternalError">
+<em class="property">exception </em><code class="descclassname">MySQLdb.</code><code class="descname">InternalError</code><a class="headerlink" href="#MySQLdb.InternalError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.DatabaseError" title="MySQLdb._exceptions.DatabaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.DatabaseError</span></code></a></p>
+<p>Exception raised when the database encounters an internal
+error, e.g. the cursor is not valid anymore, the transaction is
+out of sync, etc.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.MySQLError">
+<em class="property">exception </em><code class="descclassname">MySQLdb.</code><code class="descname">MySQLError</code><a class="headerlink" href="#MySQLdb.MySQLError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Exception related to operation with MySQL.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.NotSupportedError">
+<em class="property">exception </em><code class="descclassname">MySQLdb.</code><code class="descname">NotSupportedError</code><a class="headerlink" href="#MySQLdb.NotSupportedError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.DatabaseError" title="MySQLdb._exceptions.DatabaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.DatabaseError</span></code></a></p>
+<p>Exception raised in case a method or database API was used
+which is not supported by the database, e.g. requesting a
+.rollback() on a connection that does not support transaction or
+has transactions turned off.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="MySQLdb.DBAPISet">
+<em class="property">class </em><code class="descclassname">MySQLdb.</code><code class="descname">DBAPISet</code><a class="headerlink" href="#MySQLdb.DBAPISet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">frozenset</span></code></p>
+<p>A special type of set for which A == x is true if A is a
+DBAPISet and x is a member of that set.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.OperationalError">
+<em class="property">exception </em><code class="descclassname">MySQLdb.</code><code class="descname">OperationalError</code><a class="headerlink" href="#MySQLdb.OperationalError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.DatabaseError" title="MySQLdb._exceptions.DatabaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.DatabaseError</span></code></a></p>
+<p>Exception raised for errors that are related to the database’s
+operation and not necessarily under the control of the programmer,
+e.g. an unexpected disconnect occurs, the data source name is not
+found, a transaction could not be processed, a memory allocation
+error occurred during processing, etc.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.ProgrammingError">
+<em class="property">exception </em><code class="descclassname">MySQLdb.</code><code class="descname">ProgrammingError</code><a class="headerlink" href="#MySQLdb.ProgrammingError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.DatabaseError" title="MySQLdb._exceptions.DatabaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.DatabaseError</span></code></a></p>
+<p>Exception raised for programming errors, e.g. table not found
+or already exists, syntax error in the SQL statement, wrong number
+of parameters specified, etc.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.Warning">
+<em class="property">exception </em><code class="descclassname">MySQLdb.</code><code class="descname">Warning</code><a class="headerlink" href="#MySQLdb.Warning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#MySQLdb.Warning" title="MySQLdb.Warning"><code class="xref py py-class docutils literal notranslate"><span class="pre">Warning</span></code></a>, <a class="reference internal" href="index.html#MySQLdb._exceptions.MySQLError" title="MySQLdb._exceptions.MySQLError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.MySQLError</span></code></a></p>
+<p>Exception raised for important warnings like data truncations
+while inserting, etc.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.connect">
+<code class="descclassname">MySQLdb.</code><code class="descname">connect</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Factory function for connections.Connection.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.debug">
+<code class="descclassname">MySQLdb.</code><code class="descname">debug</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.debug" title="Permalink to this definition">¶</a></dt>
+<dd><p>Does a DBUG_PUSH with the given string.
+mysql_debug() uses the Fred Fish debug library.
+To use this function, you must compile the client library to
+support debugging.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.escape">
+<code class="descclassname">MySQLdb.</code><code class="descname">escape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.escape" title="Permalink to this definition">¶</a></dt>
+<dd><p>escape(obj, dict) – escape any special characters in object obj
+using mapping dict to provide quoting functions for each type.
+Returns a SQL literal string.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.escape_string">
+<code class="descclassname">MySQLdb.</code><code class="descname">escape_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.escape_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>escape_string(s) – quote any SQL-interpreted characters in string s.</p>
+<p>Use connection.escape_string(s), if you use it at all.
+_mysql.escape_string(s) cannot handle character sets. You are
+probably better off using connection.escape(o) instead, since
+it will escape entire sequences as well as strings.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.get_client_info">
+<code class="descclassname">MySQLdb.</code><code class="descname">get_client_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.get_client_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>get_client_info() – Returns a string that represents
+the client library version.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.string_literal">
+<code class="descclassname">MySQLdb.</code><code class="descname">string_literal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.string_literal" title="Permalink to this definition">¶</a></dt>
+<dd><p>string_literal(obj) – converts object obj into a SQL string literal.
+This means, any special SQL characters are escaped, and it is enclosed
+within single quotes. In other words, it performs:</p>
+<p>“’%s’” % escape_string(str(obj))</p>
+<p>Use connection.string_literal(obj), if you use it at all.
+_mysql.string_literal(obj) cannot handle character sets.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-MySQLdb.connections">
+<span id="connections-module"></span><h3><code class="xref py py-mod docutils literal notranslate"><span class="pre">connections</span></code> Module<a class="headerlink" href="#module-MySQLdb.connections" title="Permalink to this headline">¶</a></h3>
+<p>This module implements connections for MySQLdb. Presently there is
+only one class: Connection. Others are unlikely. However, you might
+want to make your own subclasses. In most cases, you will probably
+override Connection.default_cursor with a non-standard Cursor class.</p>
+<dl class="class">
+<dt id="MySQLdb.connections.Connection">
+<em class="property">class </em><code class="descclassname">MySQLdb.connections.</code><code class="descname">Connection</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.connections.Connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">_mysql.connection</span></code></p>
+<p>MySQL Database Connection Object</p>
+<dl class="exception">
+<dt id="MySQLdb.connections.Connection.DataError">
+<em class="property">exception </em><code class="descname">DataError</code><a class="headerlink" href="#MySQLdb.connections.Connection.DataError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.DatabaseError" title="MySQLdb._exceptions.DatabaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.DatabaseError</span></code></a></p>
+<p>Exception raised for errors that are due to problems with the
+processed data like division by zero, numeric value out of range,
+etc.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.connections.Connection.DatabaseError">
+<em class="property">exception </em><code class="descname">DatabaseError</code><a class="headerlink" href="#MySQLdb.connections.Connection.DatabaseError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.Error" title="MySQLdb._exceptions.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.Error</span></code></a></p>
+<p>Exception raised for errors that are related to the
+database.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.connections.Connection.Error">
+<em class="property">exception </em><code class="descname">Error</code><a class="headerlink" href="#MySQLdb.connections.Connection.Error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.MySQLError" title="MySQLdb._exceptions.MySQLError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.MySQLError</span></code></a></p>
+<p>Exception that is the base class of all other error exceptions
+(not Warning).</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.connections.Connection.IntegrityError">
+<em class="property">exception </em><code class="descname">IntegrityError</code><a class="headerlink" href="#MySQLdb.connections.Connection.IntegrityError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.DatabaseError" title="MySQLdb._exceptions.DatabaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.DatabaseError</span></code></a></p>
+<p>Exception raised when the relational integrity of the database
+is affected, e.g. a foreign key check fails, duplicate key,
+etc.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.connections.Connection.InterfaceError">
+<em class="property">exception </em><code class="descname">InterfaceError</code><a class="headerlink" href="#MySQLdb.connections.Connection.InterfaceError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.Error" title="MySQLdb._exceptions.Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.Error</span></code></a></p>
+<p>Exception raised for errors that are related to the database
+interface rather than the database itself.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.connections.Connection.InternalError">
+<em class="property">exception </em><code class="descname">InternalError</code><a class="headerlink" href="#MySQLdb.connections.Connection.InternalError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.DatabaseError" title="MySQLdb._exceptions.DatabaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.DatabaseError</span></code></a></p>
+<p>Exception raised when the database encounters an internal
+error, e.g. the cursor is not valid anymore, the transaction is
+out of sync, etc.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.connections.Connection.NotSupportedError">
+<em class="property">exception </em><code class="descname">NotSupportedError</code><a class="headerlink" href="#MySQLdb.connections.Connection.NotSupportedError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.DatabaseError" title="MySQLdb._exceptions.DatabaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.DatabaseError</span></code></a></p>
+<p>Exception raised in case a method or database API was used
+which is not supported by the database, e.g. requesting a
+.rollback() on a connection that does not support transaction or
+has transactions turned off.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.connections.Connection.OperationalError">
+<em class="property">exception </em><code class="descname">OperationalError</code><a class="headerlink" href="#MySQLdb.connections.Connection.OperationalError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.DatabaseError" title="MySQLdb._exceptions.DatabaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.DatabaseError</span></code></a></p>
+<p>Exception raised for errors that are related to the database’s
+operation and not necessarily under the control of the programmer,
+e.g. an unexpected disconnect occurs, the data source name is not
+found, a transaction could not be processed, a memory allocation
+error occurred during processing, etc.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.connections.Connection.ProgrammingError">
+<em class="property">exception </em><code class="descname">ProgrammingError</code><a class="headerlink" href="#MySQLdb.connections.Connection.ProgrammingError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="index.html#MySQLdb._exceptions.DatabaseError" title="MySQLdb._exceptions.DatabaseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.DatabaseError</span></code></a></p>
+<p>Exception raised for programming errors, e.g. table not found
+or already exists, syntax error in the SQL statement, wrong number
+of parameters specified, etc.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="MySQLdb.connections.Connection.Warning">
+<em class="property">exception </em><code class="descname">Warning</code><a class="headerlink" href="#MySQLdb.connections.Connection.Warning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Warning</span></code>, <a class="reference internal" href="index.html#MySQLdb._exceptions.MySQLError" title="MySQLdb._exceptions.MySQLError"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb._exceptions.MySQLError</span></code></a></p>
+<p>Exception raised for important warnings like data truncations
+while inserting, etc.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MySQLdb.connections.Connection.autocommit">
+<code class="descname">autocommit</code><span class="sig-paren">(</span><em>on</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.connections.Connection.autocommit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the autocommit mode. True values enable; False value disable.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MySQLdb.connections.Connection.begin">
+<code class="descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.connections.Connection.begin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Explicitly begin a connection.</p>
+<p>This method is not used when autocommit=False (default).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MySQLdb.connections.Connection.cursor">
+<code class="descname">cursor</code><span class="sig-paren">(</span><em>cursorclass=None</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.connections.Connection.cursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a cursor on which queries may be performed. The
+optional cursorclass parameter is used to create the
+Cursor. By default, self.cursorclass=cursors.Cursor is
+used.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MySQLdb.connections.Connection.default_cursor">
+<code class="descname">default_cursor</code><a class="headerlink" href="#MySQLdb.connections.Connection.default_cursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#MySQLdb.cursors.Cursor" title="MySQLdb.cursors.Cursor"><code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb.cursors.Cursor</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MySQLdb.connections.Connection.literal">
+<code class="descname">literal</code><span class="sig-paren">(</span><em>o</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.connections.Connection.literal" title="Permalink to this definition">¶</a></dt>
+<dd><p>If o is a single object, returns an SQL literal as a string.
+If o is a non-string sequence, the items of the sequence are
+converted and returned as a sequence.</p>
+<p>Non-standard. For internal use; do not use this in your
+applications.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MySQLdb.connections.Connection.query">
+<code class="descname">query</code><span class="sig-paren">(</span><em>query</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.connections.Connection.query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute a query. store_result() or use_result() will get the
+result set, if any. Non-standard. Use cursor() to create a cursor,
+then cursor.execute().</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MySQLdb.connections.Connection.set_character_set">
+<code class="descname">set_character_set</code><span class="sig-paren">(</span><em>charset</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.connections.Connection.set_character_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the connection character set to charset. The character
+set can only be changed in MySQL-4.1 and newer. If you try
+to change the character set from the current value in an
+older version, NotSupportedError will be raised.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MySQLdb.connections.Connection.set_sql_mode">
+<code class="descname">set_sql_mode</code><span class="sig-paren">(</span><em>sql_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.connections.Connection.set_sql_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the connection sql_mode. See MySQL documentation for
+legal values.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MySQLdb.connections.Connection.show_warnings">
+<code class="descname">show_warnings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.connections.Connection.show_warnings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return detailed information about warnings as a
+sequence of tuples of (Level, Code, Message). This
+is only supported in MySQL-4.1 and up. If your server
+is an earlier version, an empty sequence is returned.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-MySQLdb.converters">
+<span id="converters-module"></span><h3><code class="xref py py-mod docutils literal notranslate"><span class="pre">converters</span></code> Module<a class="headerlink" href="#module-MySQLdb.converters" title="Permalink to this headline">¶</a></h3>
+<p>MySQLdb type conversion module</p>
+<p>This module handles all the type conversions for MySQL. If the default
+type conversions aren’t what you need, you can make your own. The
+dictionary conversions maps some kind of type to a conversion function
+which returns the corresponding value:</p>
+<p>Key: FIELD_TYPE.* (from MySQLdb.constants)</p>
+<p>Conversion function:</p>
+<blockquote>
+<div><p>Arguments: string</p>
+<p>Returns: Python object</p>
+</div></blockquote>
+<p>Key: Python type object (from types) or class</p>
+<p>Conversion function:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Arguments: Python object of indicated type or class AND</dt>
+<dd>conversion dictionary</dd>
+</dl>
+<p>Returns: SQL literal value</p>
+<dl class="docutils">
+<dt>Notes: Most conversion functions can ignore the dictionary, but</dt>
+<dd>it is a required parameter. It is necessary for converting
+things like sequences and instances.</dd>
+</dl>
+</div></blockquote>
+<p>Don’t modify conversions if you can avoid it. Instead, make copies
+(with the copy() method), modify the copies, and then pass them to
+MySQL.connect().</p>
+<dl class="function">
+<dt id="MySQLdb.converters.Bool2Str">
+<code class="descclassname">MySQLdb.converters.</code><code class="descname">Bool2Str</code><span class="sig-paren">(</span><em>s</em>, <em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.converters.Bool2Str" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.converters.Decimal2Literal">
+<code class="descclassname">MySQLdb.converters.</code><code class="descname">Decimal2Literal</code><span class="sig-paren">(</span><em>o</em>, <em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.converters.Decimal2Literal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.converters.Float2Str">
+<code class="descclassname">MySQLdb.converters.</code><code class="descname">Float2Str</code><span class="sig-paren">(</span><em>o</em>, <em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.converters.Float2Str" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.converters.None2NULL">
+<code class="descclassname">MySQLdb.converters.</code><code class="descname">None2NULL</code><span class="sig-paren">(</span><em>o</em>, <em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.converters.None2NULL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert None to NULL.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.converters.Set2Str">
+<code class="descclassname">MySQLdb.converters.</code><code class="descname">Set2Str</code><span class="sig-paren">(</span><em>s</em>, <em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.converters.Set2Str" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.converters.Thing2Literal">
+<code class="descclassname">MySQLdb.converters.</code><code class="descname">Thing2Literal</code><span class="sig-paren">(</span><em>o</em>, <em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.converters.Thing2Literal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert something into a SQL string literal.  If using
+MySQL-3.23 or newer, string_literal() is a method of the
+_mysql.MYSQL object, and this function will be overridden with
+that method when the connection is created.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.converters.Thing2Str">
+<code class="descclassname">MySQLdb.converters.</code><code class="descname">Thing2Str</code><span class="sig-paren">(</span><em>s</em>, <em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.converters.Thing2Str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert something into a string via str().</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.converters.array2Str">
+<code class="descclassname">MySQLdb.converters.</code><code class="descname">array2Str</code><span class="sig-paren">(</span><em>o</em>, <em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.converters.array2Str" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-MySQLdb.cursors">
+<span id="cursors-module"></span><h3><code class="xref py py-mod docutils literal notranslate"><span class="pre">cursors</span></code> Module<a class="headerlink" href="#module-MySQLdb.cursors" title="Permalink to this headline">¶</a></h3>
+<p>MySQLdb Cursors</p>
+<p>This module implements Cursors of various types for MySQLdb. By
+default, MySQLdb uses the Cursor class.</p>
+<dl class="class">
+<dt id="MySQLdb.cursors.Cursor">
+<em class="property">class </em><code class="descclassname">MySQLdb.cursors.</code><code class="descname">Cursor</code><span class="sig-paren">(</span><em>connection</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.cursors.Cursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb.cursors.CursorStoreResultMixIn</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb.cursors.CursorTupleRowsMixIn</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">MySQLdb.cursors.BaseCursor</span></code></p>
+<p>This is the standard Cursor class that returns rows as tuples
+and stores the result set in the client.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-MySQLdb.times">
+<span id="times-module"></span><h3><code class="xref py py-mod docutils literal notranslate"><span class="pre">times</span></code> Module<a class="headerlink" href="#module-MySQLdb.times" title="Permalink to this headline">¶</a></h3>
+<p>times module</p>
+<p>This module provides some Date and Time classes for dealing with MySQL data.</p>
+<p>Use Python datetime module to handle date and time columns.</p>
+<dl class="function">
+<dt id="MySQLdb.times.DateFromTicks">
+<code class="descclassname">MySQLdb.times.</code><code class="descname">DateFromTicks</code><span class="sig-paren">(</span><em>ticks</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.times.DateFromTicks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert UNIX ticks into a date instance.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.times.DateTime2literal">
+<code class="descclassname">MySQLdb.times.</code><code class="descname">DateTime2literal</code><span class="sig-paren">(</span><em>d</em>, <em>c</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.times.DateTime2literal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format a DateTime object as an ISO timestamp.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.times.DateTimeDelta2literal">
+<code class="descclassname">MySQLdb.times.</code><code class="descname">DateTimeDelta2literal</code><span class="sig-paren">(</span><em>d</em>, <em>c</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.times.DateTimeDelta2literal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format a DateTimeDelta object as a time.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.times.DateTime_or_None">
+<code class="descclassname">MySQLdb.times.</code><code class="descname">DateTime_or_None</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.times.DateTime_or_None" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.times.Date_or_None">
+<code class="descclassname">MySQLdb.times.</code><code class="descname">Date_or_None</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.times.Date_or_None" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.times.TimeDelta_or_None">
+<code class="descclassname">MySQLdb.times.</code><code class="descname">TimeDelta_or_None</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.times.TimeDelta_or_None" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.times.TimeFromTicks">
+<code class="descclassname">MySQLdb.times.</code><code class="descname">TimeFromTicks</code><span class="sig-paren">(</span><em>ticks</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.times.TimeFromTicks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert UNIX ticks into a time instance.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.times.Time_or_None">
+<code class="descclassname">MySQLdb.times.</code><code class="descname">Time_or_None</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.times.Time_or_None" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.times.TimestampFromTicks">
+<code class="descclassname">MySQLdb.times.</code><code class="descname">TimestampFromTicks</code><span class="sig-paren">(</span><em>ticks</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.times.TimestampFromTicks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert UNIX ticks into a datetime instance.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.times.format_TIMEDELTA">
+<code class="descclassname">MySQLdb.times.</code><code class="descname">format_TIMEDELTA</code><span class="sig-paren">(</span><em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.times.format_TIMEDELTA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="MySQLdb.times.format_TIMESTAMP">
+<code class="descclassname">MySQLdb.times.</code><code class="descname">format_TIMESTAMP</code><span class="sig-paren">(</span><em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#MySQLdb.times.format_TIMESTAMP" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="subpackages">
+<h3>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<span id="document-MySQLdb.constants"></span><div class="section" id="constants-package">
+<h4>constants Package<a class="headerlink" href="#constants-package" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id1">
+<h5><code class="xref py py-mod docutils literal notranslate"><span class="pre">constants</span></code> Package<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h5>
+<span class="target" id="module-MySQLdb.constants"></span></div>
+<div class="section" id="module-MySQLdb.constants.CLIENT">
+<span id="client-module"></span><h5><code class="xref py py-mod docutils literal notranslate"><span class="pre">CLIENT</span></code> Module<a class="headerlink" href="#module-MySQLdb.constants.CLIENT" title="Permalink to this headline">¶</a></h5>
+<p>MySQL CLIENT constants</p>
+<p>These constants are used when creating the connection. Use bitwise-OR
+(|) to combine options together, and pass them as the client_flags
+parameter to MySQLdb.Connection. For more information on these flags,
+see the MySQL C API documentation for mysql_real_connect().</p>
+</div>
+<div class="section" id="module-MySQLdb.constants.CR">
+<span id="cr-module"></span><h5><code class="xref py py-mod docutils literal notranslate"><span class="pre">CR</span></code> Module<a class="headerlink" href="#module-MySQLdb.constants.CR" title="Permalink to this headline">¶</a></h5>
+<p>MySQL Connection Errors</p>
+<p>Nearly all of these raise OperationalError. COMMANDS_OUT_OF_SYNC
+raises ProgrammingError.</p>
+</div>
+<div class="section" id="module-MySQLdb.constants.ER">
+<span id="er-module"></span><h5><code class="xref py py-mod docutils literal notranslate"><span class="pre">ER</span></code> Module<a class="headerlink" href="#module-MySQLdb.constants.ER" title="Permalink to this headline">¶</a></h5>
+<p>MySQL ER Constants</p>
+<p>These constants are error codes for the bulk of the error conditions
+that may occur.</p>
+</div>
+<div class="section" id="module-MySQLdb.constants.FIELD_TYPE">
+<span id="field-type-module"></span><h5><code class="xref py py-mod docutils literal notranslate"><span class="pre">FIELD_TYPE</span></code> Module<a class="headerlink" href="#module-MySQLdb.constants.FIELD_TYPE" title="Permalink to this headline">¶</a></h5>
+<p>MySQL FIELD_TYPE Constants</p>
+<p>These constants represent the various column (field) types that are
+supported by MySQL.</p>
+</div>
+<div class="section" id="module-MySQLdb.constants.FLAG">
+<span id="flag-module"></span><h5><code class="xref py py-mod docutils literal notranslate"><span class="pre">FLAG</span></code> Module<a class="headerlink" href="#module-MySQLdb.constants.FLAG" title="Permalink to this headline">¶</a></h5>
+<p>MySQL FLAG Constants</p>
+<p>These flags are used along with the FIELD_TYPE to indicate various
+properties of columns in a result set.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<span id="document-FAQ"></span><div class="section" id="mysqldb-frequently-asked-questions">
+<h2><a class="toc-backref" href="#id1">MySQLdb Frequently Asked Questions</a><a class="headerlink" href="#mysqldb-frequently-asked-questions" title="Permalink to this headline">¶</a></h2>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#mysqldb-frequently-asked-questions" id="id1">MySQLdb Frequently Asked Questions</a><ul>
+<li><a class="reference internal" href="#build-errors" id="id2">Build Errors</a></li>
+<li><a class="reference internal" href="#importerror" id="id3">ImportError</a></li>
+<li><a class="reference internal" href="#my-data-disappeared-or-won-t-go-away" id="id4">My data disappeared! (or won’t go away!)</a></li>
+<li><a class="reference internal" href="#other-errors" id="id5">Other Errors</a></li>
+<li><a class="reference internal" href="#other-resources" id="id6">Other Resources</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="build-errors">
+<h3><a class="toc-backref" href="#id2">Build Errors</a><a class="headerlink" href="#build-errors" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>mysql.h: No such file or directory</div></blockquote>
+<p>This almost always mean you don’t have development packages
+installed. On some systems, C headers for various things (like MySQL)
+are distributed as a separate package. You’ll need to figure out
+what that is and install it, but often the name ends with -devel.</p>
+<p>Another possibility: Some older versions of mysql_config behave oddly
+and may throw quotes around some of the path names, which confused
+MySQLdb-1.2.0. 1.2.1 works around these problems. If you see things
+like -I’/usr/local/include/mysql’ in your compile command, that’s
+probably the issue, but it shouldn’t happen any more.</p>
+</div>
+<div class="section" id="importerror">
+<h3><a class="toc-backref" href="#id3">ImportError</a><a class="headerlink" href="#importerror" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>ImportError: No module named _mysql</div></blockquote>
+<p>If you see this, it’s likely you did some wrong when installing
+MySQLdb; re-read (or read) README. _mysql is the low-level C module
+that interfaces with the MySQL client library.</p>
+<p>Various versions of MySQLdb in the past have had build issues on
+“weird” platforms; “weird” in this case means “not Linux”, though
+generally there aren’t problems on Unix/POSIX platforms, including
+BSDs and Mac OS X. Windows has been more problematic, in part because
+there is no <cite>mysql_config</cite> available in the Windows installation of
+MySQL. 1.2.1 solves most, if not all, of these problems, but you will
+still have to edit a configuration file so that the setup knows where
+to find MySQL and what libraries to include.</p>
+<blockquote>
+<div>ImportError: libmysqlclient_r.so.14: cannot open shared object file: No such file or directory</div></blockquote>
+<p>The number after .so may vary, but this means you have a version of
+MySQLdb compiled against one version of MySQL, and are now trying to
+run it against a different version. The shared library version tends
+to change between major releases.</p>
+<p>Solution: Rebuilt MySQLdb, or get the matching version of MySQL.</p>
+<p>Another thing that can cause this: The MySQL libraries may not be on
+your system path.</p>
+<p>Solutions:</p>
+<ul>
+<li><p class="first">set the LD_LIBRARY_PATH environment variable so that it includes
+the path to the MySQL libraries.</p>
+</li>
+<li><p class="first">set static=True in site.cfg for static linking</p>
+</li>
+<li><p class="first">reconfigure your system so that the MySQL libraries are on the
+default loader path. In Linux, you edit /etc/ld.so.conf and run
+ldconfig. For Solaris, see <a class="reference external" href="http://docs.oracle.com/cd/E19253-01/817-1984/chapter6-63352/">Linker and Libraries Guide</a>.</p>
+<p>ImportError: ld.so.1: python: fatal: libmtmalloc.so.1: DF_1_NOOPEN tagged object may not be dlopen()’ed</p>
+</li>
+</ul>
+<p>This is a weird one from Solaris. What does it mean? I have no idea.
+However, things like this can happen if there is some sort of a compiler
+or environment mismatch between Python and MySQL. For example, on some
+commercial systems, you might have some code compiled with their own
+compiler, and other things compiled with GCC. They don’t always mesh
+together. One way to encounter this is by getting binary packages from
+different vendors.</p>
+<p>Solution: Rebuild Python or MySQL (or maybe both) from source.</p>
+<blockquote>
+<div>ImportError: dlopen(./_mysql.so, 2): Symbol not found: _sprintf$LDBLStub
+Referenced from: ./_mysql.so
+Expected in: dynamic lookup</div></blockquote>
+<p>This is one from Mac OS X. It seems to have been a compiler mismatch,
+but this time between two different versions of GCC. It seems nearly
+every major release of GCC changes the ABI in some why, so linking
+code compiled with GCC-3.3 and GCC-4.0, for example, can be
+problematic.</p>
+</div>
+<div class="section" id="my-data-disappeared-or-won-t-go-away">
+<h3><a class="toc-backref" href="#id4">My data disappeared! (or won’t go away!)</a><a class="headerlink" href="#my-data-disappeared-or-won-t-go-away" title="Permalink to this headline">¶</a></h3>
+<p>Starting with 1.2.0, MySQLdb disables autocommit by default, as
+required by the DB-API standard (<a class="reference external" href="https://www.python.org/dev/peps/pep-0249/">PEP-249</a>). If you are using InnoDB
+tables or some other type of transactional table type, you’ll need
+to do connection.commit() before closing the connection, or else
+none of your changes will be written to the database.</p>
+<p>Conversely, you can also use connection.rollback() to throw away
+any changes you’ve made since the last commit.</p>
+<p>Important note: Some SQL statements – specifically DDL statements
+like CREATE TABLE – are non-transactional, so they can’t be
+rolled back, and they cause pending transactions to commit.</p>
+</div>
+<div class="section" id="other-errors">
+<h3><a class="toc-backref" href="#id5">Other Errors</a><a class="headerlink" href="#other-errors" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>OperationalError: (1251, ‘Client does not support authentication protocol requested by server; consider upgrading MySQL client’)</div></blockquote>
+<p>This means your server and client libraries are not the same version.
+More specifically, it probably means you have a 4.1 or newer server
+and 4.0 or older client. You can either upgrade the client side, or
+try some of the workarounds in <a class="reference external" href="http://dev.mysql.com/doc/refman/5.0/en/password-hashing.html">Password Hashing as of MySQL 4.1</a>.</p>
+</div>
+<div class="section" id="other-resources">
+<h3><a class="toc-backref" href="#id6">Other Resources</a><a class="headerlink" href="#other-resources" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Help forum. Please search before posting.</li>
+<li><a class="reference external" href="http://www.google.com/">Google</a></li>
+<li>READ README!</li>
+<li>Read the User’s Guide</li>
+<li>Read <a class="reference external" href="https://www.python.org/dev/peps/pep-0249/">PEP-249</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2012, Andy Dustman
+      
+        <span class="commit">
+          Revision <code>6c67620b</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+          <dd><a href="/en/latest/">latest</a></dd>
+        
+          <dd><a href="/en/stable/">stable</a></dd>
+        
+          <dd><a href="/en/v1.4.5/">v1.4.5</a></dd>
+        
+          <dd><a href="/en/1.3.12/">1.3.12</a></dd>
+        
+          <dd><a href="/en/1.3.11/">1.3.11</a></dd>
+        
+          <dd><a href="/en/1.3.10/">1.3.10</a></dd>
+        
+          <dd><a href="/en/1.3.9/">1.3.9</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+          <dd><a href="//readthedocs.org/projects/mysqlclient/downloads/pdf/latest/">pdf</a></dd>
+        
+          <dd><a href="//readthedocs.org/projects/mysqlclient/downloads/htmlzip/latest/">html</a></dd>
+        
+          <dd><a href="//readthedocs.org/projects/mysqlclient/downloads/epub/latest/">epub</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>On Read the Docs</dt>
+          <dd>
+            <a href="//readthedocs.org/projects/mysqlclient/?fromdocs=mysqlclient">Project Home</a>
+          </dd>
+          <dd>
+            <a href="//readthedocs.org/builds/mysqlclient/?fromdocs=mysqlclient">Builds</a>
+          </dd>
+      </dl>
+      <hr/>
+      Free document hosting provided by <a href="http://www.readthedocs.org">Read the Docs</a>.
+
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
+</body>
+</html>
