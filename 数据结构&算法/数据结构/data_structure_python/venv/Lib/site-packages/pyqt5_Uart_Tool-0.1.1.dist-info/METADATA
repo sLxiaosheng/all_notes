@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyqt5-Uart-Tool
+Version: 0.1.1
+Summary: PyQt5 uart tool in CHN
+Home-page: UNKNOWN
+Author: Agatha Kuan
+Author-email: agathakuannew@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: pyserial
+
+UNKNOWN
+
+

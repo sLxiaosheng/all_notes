@@ -64,7 +64,7 @@ Lily:   for example, there is social media plugins(插件) you see on certain we
 
 Mark:  Without these APIs，these social media giants would have to share code directly with owners of other sites which would be tedious，difficult，and possibly give away certain trade secrets！
 
-Tom:  it’s funny! you're still talking advantage of APIs all the time if you are in this time， API makes it easier for programs to do things like talk to your devices`/dɪ'vaɪs/`, use welcome screen`/skrin/` elements`/ˈɛləmənt/` like buttons and status`/'stetəs/` bars，and much more，without making the developer code these things directly and also helping end-users by providing a more reliable，consistent`/kən'sɪstənt/` experience`/ɪk'spɪrɪəns/`.
+Tom:  it’s funny! you're still talking advantage of APIs all the time if you are in this time， API makes it easier for programs to do things like talk to your devices, use welcome screen  elements  like buttons and status bars，and much more，without making the developer code these things directly and also helping end-users by providing a more reliable，consistent  experience.
 
 Lily:   can you remeber imagine every single Windows program on your computer has a different looking close button on the corner.
 

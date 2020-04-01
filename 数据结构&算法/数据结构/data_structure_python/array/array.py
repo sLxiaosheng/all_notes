@@ -1,11 +1,12 @@
 
-#
-class array():
+import sys
+from PyQt5 import QtWidgits, QtCore
 
-    data = []
-
-    def __init__(self, capacity):
-
-        len(data) = capacity
+app = QtWidgets.QApplication(sys.argv)
+widget = QtWidgets.QWidget()
+widget.resize(400, 400)
+widget.setWindowTitle('Hello World')
+widget.show()
+sys.exit(app.exec__())
 
 

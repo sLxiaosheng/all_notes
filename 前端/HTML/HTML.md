@@ -337,7 +337,7 @@ alt 属性用来为图像定义一串预备的可替换的文本。替换文本�
 </html>
 ```
 
-![image-20200324085712595](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20200324085712595.png)
+![picture](../photo/1.png)
 
 
 
@@ -519,18 +519,26 @@ border 定义一个边框
 
 块级元素在浏览器显示时，通常会以新行来开始（和结束）。
 
-例子：<h1>, <p>, <ul>, <table>
+例子：
+
+```
+<h1>, <p>, <ul>, <table>
+```
+
+
 
 ### 内联元素
 
+```
 例子：<b>, <td>, <a>, <img>
+```
 
 ### 《div》《span》
 
-![image-20200322170747311](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20200322170747311.png)
+![picture](../photo/2.png)
 			**定义文档中的分区或节**
 
-![image-20200322170710690](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20200322170710690.png)
+![picture](../photo/3.png)
 
 **定义 span，用来组合文档中的行内元素**
 

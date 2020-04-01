@@ -129,6 +129,10 @@ public class array<E> {
         return delete(size - 1);
     }
 
+    public E removeFirst(){
+        return delete(0);
+    }
+
     //父类
     @Override
     public String toString(){

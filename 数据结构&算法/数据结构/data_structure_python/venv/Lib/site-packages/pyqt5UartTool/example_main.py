@@ -1,0 +1,11 @@
+
+from pyqt5UartTool import Pyqt5_Serial
+
+
+if __name__ == "__main__":
+    import sys
+
+    app = QtWidgets.QApplication(sys.argv)
+    myshow = Pyqt5_Serial()
+    myshow.show()
+    sys.exit(app.exec_())

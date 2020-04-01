@@ -1,0 +1,2 @@
+name="pyqt5-Uart-Tool"
+from .pyserial_demo import Pyqt5_Serial
