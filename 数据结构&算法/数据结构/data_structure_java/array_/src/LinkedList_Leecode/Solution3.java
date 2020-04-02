@@ -6,21 +6,19 @@ public class Solution3 {
 
     public ListNode removeElements(ListNode head, int val) {
 
-
         //最基本的问题
         if(head == null)
             return null;
 
-        ListNode res = removeElements(head.next, val);
-        if(head.val == val){
-            System.out.println(res);
-            return res;
-        }
-        else{
-            head.next = res;
-            return head;
-        }
-
+        head.next = removeElements(head.next, val);
+        //if else 可以被三元表达式代替
+//        if(head.val == val){
+//            return head.next;
+//        }
+//        else{
+//            return head;
+//        }
+        return head.val == val ? head.next : head;
     }
 
     public static void main(String[] args){
@@ -29,9 +27,7 @@ public class Solution3 {
         ListNode head = new ListNode(nums);
         System.out.println(head);
 
-        ListNode res = (new Solution3()).removeElements(head, 2);
+        ListNode res = (new Solution3()).removeElements(head, 5);
         System.out.println(res);
-        System.out.println(res);
-
     }
 }
