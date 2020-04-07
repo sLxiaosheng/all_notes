@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e4c2650-cfb1-463b-9030-39b1894a2410" name="Default Changelist" comment="Default Changelist">
+      <change afterPath="$PROJECT_DIR$/Map/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Map/pride-and-prejudice.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../plan.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../plan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Leecode/Blinary_tree.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leecode/Blinary_tree.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_structure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/array_.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Binary_Search_tree/BST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Binary_Search_tree/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Binary_Search_tree/preorder_off.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/LinkedList_Leecode/ListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/LinkedList_Leecode/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/LinkedList_Leecode/Solution3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/LinkedList_Leecode/Solution_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/LinkedList_Leecode/Solution_vmhead.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/LinkedList_Leecode/recursion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/LinkedList_Queue/Array.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/LinkedList_Queue/ArrayQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/LinkedList_Queue/LinkedListQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/LinkedList_Queue/LoopQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/LinkedList_Queue/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/LinkedList_Queue/Queue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Linked_List/ArrayStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Linked_List/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Linked_List/LinkedListStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Linked_List/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Linked_List/array.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Linked_List/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Set/BST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Set/BST_set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Set/FileOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Set/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Set/set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Stack/ArrayStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Stack/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Stack/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/Stack/array.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/a-tale-of-two-cities.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/array/array.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/array/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/pride-and-prejudice.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/queue/Array.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/queue/ArrayQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/queue/LoopQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/queue/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/queue/Queue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array_/src/stack_leecode/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Binary_Search_tree/BST$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Binary_Search_tree/BST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Binary_Search_tree/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Binary_Search_tree/preorder_off.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Leecode/ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Leecode/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Leecode/Solution3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Leecode/Solution_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Leecode/Solution_vmhead.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Leecode/recursion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Queue/Array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Queue/ArrayQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Queue/LinkedListQueue$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Queue/LinkedListQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Queue/LoopQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Queue/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/LinkedList_Queue/Queue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Linked_List/ArrayStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Linked_List/LinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Linked_List/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Linked_List/LinkedListStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Linked_List/Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Linked_List/array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Linked_List/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/META-INF/array_.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Set/BST$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Set/BST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Set/BST_set.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Set/FileOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Set/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Set/a-tale-of-two-cities.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Set/pride-and-prejudice.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Set/set.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Stack/ArrayStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Stack/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Stack/Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/Stack/array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/array/array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/array/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/queue/Array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/queue/ArrayQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/queue/LoopQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/queue/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/queue/Queue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/stack_leecode/Solution$ArrayStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/stack_leecode/Solution$Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/stack_leecode/Solution$array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/array_/stack_leecode/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../语法.md" beforeDir="false" afterPath="$PROJECT_DIR$/../语法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../语言/Python/Web开发/HeadFirstPython" beforeDir="false" afterPath="$PROJECT_DIR$/../../../语言/Python/Web开发/HeadFirstPython" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1ZZpQDp8xPkphEjmdT5Gz6tD4wP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="新增" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/array_" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Map" />
+      <recent name="Set_Linkedlist" />
+      <recent name="Set" />
+      <recent name="LinkedList_Queue" />
+      <recent name="Linked_List" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Coding_notes\notes\数据结构&amp;算法\数据结构\data_structure_java\array_" />
+      <recent name="D:\Coding_notes\notes\数据结构&amp;算法\数据结构\data_structure_java\array_\src\Map" />
+      <recent name="D:\Coding_notes\notes\数据结构&amp;算法\数据结构\data_structure_java\array_\src\Set_Linkedlist" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.LinkedListMap">
+    <configuration name="BSTSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Set_Linkedlist.BSTSet" />
+      <module name="array_" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Set_Linkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Map.LinkedListMap" />
+      <module name="array_" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Set_Linkedlist.LinkedListSet" />
+      <module name="array_" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Set_Linkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Set_BST.Main" />
+      <module name="array_" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Set_BST.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Binary_Search_tree.Main" />
+      <module name="array_" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Binary_Search_tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Set_Linkedlist.Main" />
+      <module name="array_" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Set_Linkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList_Leecode.Solution3" />
+      <module name="array_" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedList_Leecode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.LinkedListMap" />
+        <item itemvalue="应用程序.LinkedListSet" />
+        <item itemvalue="应用程序.BSTSet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES,SHOW_INTERFACES" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e4c2650-cfb1-463b-9030-39b1894a2410" name="Default Changelist" comment="" />
+      <created>1585056451825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585056451825</updated>
+      <workItem from="1585056467387" duration="474000" />
+      <workItem from="1585057061733" duration="645000" />
+      <workItem from="1585057769985" duration="1857000" />
+      <workItem from="1585106905598" duration="6153000" />
+      <workItem from="1585118579218" duration="5743000" />
+      <workItem from="1585126617581" duration="15754000" />
+      <workItem from="1585186191011" duration="118000" />
+      <workItem from="1585186422946" duration="23110000" />
+      <workItem from="1585536542399" duration="8915000" />
+      <workItem from="1585552351182" duration="9905000" />
+      <workItem from="1585660218789" duration="5144000" />
+      <workItem from="1585703351670" duration="7466000" />
+      <workItem from="1585746861081" duration="2399000" />
+      <workItem from="1585793196850" duration="24250000" />
+      <workItem from="1585881595959" duration="4121000" />
+      <workItem from="1585889546063" duration="4612000" />
+      <workItem from="1585921157072" duration="2578000" />
+      <workItem from="1586003941835" duration="8134000" />
+      <workItem from="1586049273341" duration="3698000" />
+      <workItem from="1586053246685" duration="203000" />
+    </task>
+    <task id="LOCAL-00001" summary="Default Changelist">
+      <created>1585555054143</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585555054143</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="326" y="55" key="#Plugins" timestamp="1585118464916">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="326" y="55" key="#Plugins/0.0.1536.864@0.0.1536.864" timestamp="1585118464916" />
+    <state x="583" y="122" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1585543342955">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="583" y="122" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1536.864@0.0.1536.864" timestamp="1585543342955" />
+    <state x="449" y="72" key="#com.intellij.unscramble.UnscrambleDialog" timestamp="1585886865304">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="449" y="72" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1536.864@0.0.1536.864" timestamp="1585886865304" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1585886673889">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1585886673889" />
+    <state width="1493" height="262" key="GridCell.Tab.0.bottom" timestamp="1586053115226">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586053115226" />
+    <state width="1493" height="262" key="GridCell.Tab.0.center" timestamp="1586053115225">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586053115225" />
+    <state width="1493" height="262" key="GridCell.Tab.0.left" timestamp="1586053115225">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586053115225" />
+    <state width="1493" height="262" key="GridCell.Tab.0.right" timestamp="1586053115226">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586053115226" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1585750928075">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585750928075" />
+    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1585750928075">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1585750928075" />
+    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1585750928075">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1585750928075" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1585750928075">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1585750928075" />
+    <state x="239" y="152" width="981" height="712" key="SettingsEditor" timestamp="1585886810157">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="239" y="152" width="981" height="712" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1585886810157" />
+    <state x="387" y="38" key="new project wizard" timestamp="1585886677987">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="387" y="38" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1585886677987" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1585557593277">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1585557593277" />
+    <state x="654" y="126" width="672" height="678" key="search.everywhere.popup" timestamp="1585837303695">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="654" y="126" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1585837303695" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/data_structure$main.ic" NAME="main Coverage Results" MODIFIED="1585130347162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>array.*</FILTER>
+    </SUITE>
+  </component>
+</project>

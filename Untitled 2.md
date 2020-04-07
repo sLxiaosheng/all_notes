@@ -1,0 +1,4 @@
+For now a days ，Python learning is so hot not only in Japan but also in the world My teacher and my friend highly recommend me to take this class.this class will help me to improve my learning skills and through this class, I can use my time more effectively.With this course,  I will learn the foundations of deep learning by python. and I will understand the process of my studying, I realize that my learning method is not systematic, I always change my way to learn so that my efficient is very low.So I want that this class will help me to improve these circumstances I hope you can agree with my application. I look forward to your reply.
+
+When I am financially independent, I will give back to coursera in various ways, such as subsidizing students who have difficulty in learning and recommending coursera to others.Thank you again.
+

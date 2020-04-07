@@ -21,6 +21,18 @@
 
 
 
+## 虚拟环境
+
+### pipenv
+
+-   exit   退出虚拟环境
+-   pipenv    shell   进入虚拟环境
+-   pipenv   install    安装包
+-   pipenv    uninstall   卸载包
+-   pipenv  graph    包的依赖
+
+
+
 ## 书籍解压密码
 
 -   一. java从入门到进阶系列书籍180+本（已经整理好）：
